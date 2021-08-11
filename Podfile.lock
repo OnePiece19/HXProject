@@ -1,0 +1,16 @@
+PODS:
+  - HXLeetCode (0.1.0)
+
+DEPENDENCIES:
+  - HXLeetCode (from `Lib/HXLeetCode`)
+
+EXTERNAL SOURCES:
+  HXLeetCode:
+    :path: Lib/HXLeetCode
+
+SPEC CHECKSUMS:
+  HXLeetCode: 9b437b590d36a2c77333cd5d7c5d0aef2dc79c48
+
+PODFILE CHECKSUM: 58f1eadf846848372e76d0a889cbaa4c5e2ab96d
+
+COCOAPODS: 1.9.2
