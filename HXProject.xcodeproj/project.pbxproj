@@ -3,18 +3,21 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		34CC6697A7339A89371DFE2C /* Pods_HXProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 935F9FCAED7054E1EA1547D1 /* Pods_HXProject.framework */; };
-		E5ADAA2A26C3FC0E00D3BD6E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E5ADAA2926C3FC0E00D3BD6E /* AppDelegate.m */; };
-		E5ADAA2D26C3FC0E00D3BD6E /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E5ADAA2C26C3FC0E00D3BD6E /* SceneDelegate.m */; };
 		E5ADAA3026C3FC0E00D3BD6E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E5ADAA2F26C3FC0E00D3BD6E /* ViewController.m */; };
 		E5ADAA3326C3FC0E00D3BD6E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E5ADAA3126C3FC0E00D3BD6E /* Main.storyboard */; };
 		E5ADAA3526C3FC1000D3BD6E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E5ADAA3426C3FC1000D3BD6E /* Assets.xcassets */; };
 		E5ADAA3826C3FC1000D3BD6E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E5ADAA3626C3FC1000D3BD6E /* LaunchScreen.storyboard */; };
 		E5ADAA3B26C3FC1000D3BD6E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E5ADAA3A26C3FC1000D3BD6E /* main.m */; };
+		E5ADAA4E26C4307D00D3BD6E /* SceneDelegate+UIService.m in Sources */ = {isa = PBXBuildFile; fileRef = E5ADAA4626C4307C00D3BD6E /* SceneDelegate+UIService.m */; };
+		E5ADAA4F26C4307D00D3BD6E /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E5ADAA4726C4307C00D3BD6E /* SceneDelegate.m */; };
+		E5ADAA5026C4307D00D3BD6E /* AppDelegate+AppService.m in Sources */ = {isa = PBXBuildFile; fileRef = E5ADAA4826C4307C00D3BD6E /* AppDelegate+AppService.m */; };
+		E5ADAA5126C4307D00D3BD6E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E5ADAA4A26C4307D00D3BD6E /* AppDelegate.m */; };
+		E5ADAA5626C430CE00D3BD6E /* HXTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = E5ADAA5426C430CD00D3BD6E /* HXTabBarController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,10 +25,6 @@
 		935F9FCAED7054E1EA1547D1 /* Pods_HXProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HXProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA05304A2881597236855BD5 /* Pods-HXProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HXProject.release.xcconfig"; path = "Target Support Files/Pods-HXProject/Pods-HXProject.release.xcconfig"; sourceTree = "<group>"; };
 		E5ADAA2526C3FC0E00D3BD6E /* HXProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HXProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		E5ADAA2826C3FC0E00D3BD6E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		E5ADAA2926C3FC0E00D3BD6E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		E5ADAA2B26C3FC0E00D3BD6E /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
-		E5ADAA2C26C3FC0E00D3BD6E /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
 		E5ADAA2E26C3FC0E00D3BD6E /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		E5ADAA2F26C3FC0E00D3BD6E /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		E5ADAA3226C3FC0E00D3BD6E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -33,6 +32,16 @@
 		E5ADAA3726C3FC1000D3BD6E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E5ADAA3926C3FC1000D3BD6E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E5ADAA3A26C3FC1000D3BD6E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E5ADAA4626C4307C00D3BD6E /* SceneDelegate+UIService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SceneDelegate+UIService.m"; sourceTree = "<group>"; };
+		E5ADAA4726C4307C00D3BD6E /* SceneDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
+		E5ADAA4826C4307C00D3BD6E /* AppDelegate+AppService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AppDelegate+AppService.m"; sourceTree = "<group>"; };
+		E5ADAA4926C4307D00D3BD6E /* SceneDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
+		E5ADAA4A26C4307D00D3BD6E /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		E5ADAA4B26C4307D00D3BD6E /* AppDelegate+AppService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AppDelegate+AppService.h"; sourceTree = "<group>"; };
+		E5ADAA4C26C4307D00D3BD6E /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		E5ADAA4D26C4307D00D3BD6E /* SceneDelegate+UIService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SceneDelegate+UIService.h"; sourceTree = "<group>"; };
+		E5ADAA5426C430CD00D3BD6E /* HXTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HXTabBarController.m; sourceTree = "<group>"; };
+		E5ADAA5526C430CD00D3BD6E /* HXTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HXTabBarController.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,7 +70,6 @@
 				56C42A1BCF885A4633D6E89D /* Pods-HXProject.debug.xcconfig */,
 				AA05304A2881597236855BD5 /* Pods-HXProject.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -86,10 +94,8 @@
 		E5ADAA2726C3FC0E00D3BD6E /* HXProject */ = {
 			isa = PBXGroup;
 			children = (
-				E5ADAA2826C3FC0E00D3BD6E /* AppDelegate.h */,
-				E5ADAA2926C3FC0E00D3BD6E /* AppDelegate.m */,
-				E5ADAA2B26C3FC0E00D3BD6E /* SceneDelegate.h */,
-				E5ADAA2C26C3FC0E00D3BD6E /* SceneDelegate.m */,
+				E5ADAA4526C4305500D3BD6E /* AppDelegate */,
+				E5ADAA5226C430CD00D3BD6E /* Base */,
 				E5ADAA2E26C3FC0E00D3BD6E /* ViewController.h */,
 				E5ADAA2F26C3FC0E00D3BD6E /* ViewController.m */,
 				E5ADAA3126C3FC0E00D3BD6E /* Main.storyboard */,
@@ -99,6 +105,38 @@
 				E5ADAA3A26C3FC1000D3BD6E /* main.m */,
 			);
 			path = HXProject;
+			sourceTree = "<group>";
+		};
+		E5ADAA4526C4305500D3BD6E /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				E5ADAA4C26C4307D00D3BD6E /* AppDelegate.h */,
+				E5ADAA4A26C4307D00D3BD6E /* AppDelegate.m */,
+				E5ADAA4B26C4307D00D3BD6E /* AppDelegate+AppService.h */,
+				E5ADAA4826C4307C00D3BD6E /* AppDelegate+AppService.m */,
+				E5ADAA4926C4307D00D3BD6E /* SceneDelegate.h */,
+				E5ADAA4726C4307C00D3BD6E /* SceneDelegate.m */,
+				E5ADAA4D26C4307D00D3BD6E /* SceneDelegate+UIService.h */,
+				E5ADAA4626C4307C00D3BD6E /* SceneDelegate+UIService.m */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		E5ADAA5226C430CD00D3BD6E /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				E5ADAA5326C430CD00D3BD6E /* TabBarController */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		E5ADAA5326C430CD00D3BD6E /* TabBarController */ = {
+			isa = PBXGroup;
+			children = (
+				E5ADAA5526C430CD00D3BD6E /* HXTabBarController.h */,
+				E5ADAA5426C430CD00D3BD6E /* HXTabBarController.m */,
+			);
+			path = TabBarController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -215,9 +253,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				E5ADAA3026C3FC0E00D3BD6E /* ViewController.m in Sources */,
-				E5ADAA2A26C3FC0E00D3BD6E /* AppDelegate.m in Sources */,
+				E5ADAA4F26C4307D00D3BD6E /* SceneDelegate.m in Sources */,
+				E5ADAA5626C430CE00D3BD6E /* HXTabBarController.m in Sources */,
+				E5ADAA4E26C4307D00D3BD6E /* SceneDelegate+UIService.m in Sources */,
+				E5ADAA5126C4307D00D3BD6E /* AppDelegate.m in Sources */,
 				E5ADAA3B26C3FC1000D3BD6E /* main.m in Sources */,
-				E5ADAA2D26C3FC0E00D3BD6E /* SceneDelegate.m in Sources */,
+				E5ADAA5026C4307D00D3BD6E /* AppDelegate+AppService.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
