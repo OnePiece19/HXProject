@@ -18,6 +18,10 @@
 		E5ADAA5026C4307D00D3BD6E /* AppDelegate+AppService.m in Sources */ = {isa = PBXBuildFile; fileRef = E5ADAA4826C4307C00D3BD6E /* AppDelegate+AppService.m */; };
 		E5ADAA5126C4307D00D3BD6E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E5ADAA4A26C4307D00D3BD6E /* AppDelegate.m */; };
 		E5ADAA5626C430CE00D3BD6E /* HXTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = E5ADAA5426C430CD00D3BD6E /* HXTabBarController.m */; };
+		E5ADAAC726C4521500D3BD6E /* NSArray+Safety.m in Sources */ = {isa = PBXBuildFile; fileRef = E5ADAAC226C4521500D3BD6E /* NSArray+Safety.m */; };
+		E5ADAAC826C4521500D3BD6E /* NSString+Safety.m in Sources */ = {isa = PBXBuildFile; fileRef = E5ADAAC326C4521500D3BD6E /* NSString+Safety.m */; };
+		E5ADAAC926C4521500D3BD6E /* NSDictionary+Safety.m in Sources */ = {isa = PBXBuildFile; fileRef = E5ADAAC526C4521500D3BD6E /* NSDictionary+Safety.m */; };
+		E5ADAACA26C4521500D3BD6E /* NSAttributedString+Safety.m in Sources */ = {isa = PBXBuildFile; fileRef = E5ADAAC626C4521500D3BD6E /* NSAttributedString+Safety.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -81,6 +85,16 @@
 		E5ADAA9726C44C9F00D3BD6E /* AFURLSessionManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AFURLSessionManager.m; sourceTree = "<group>"; };
 		E5ADAA9826C44C9F00D3BD6E /* AFCompatibilityMacros.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AFCompatibilityMacros.h; sourceTree = "<group>"; };
 		E5ADAA9926C44C9F00D3BD6E /* AFHTTPSessionManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AFHTTPSessionManager.h; sourceTree = "<group>"; };
+		E5ADAABD26C4521500D3BD6E /* NSArray+Safety.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Safety.h"; sourceTree = "<group>"; };
+		E5ADAABE26C4521500D3BD6E /* NSString+Safety.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Safety.h"; sourceTree = "<group>"; };
+		E5ADAABF26C4521500D3BD6E /* NBSafetyKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NBSafetyKit.h; sourceTree = "<group>"; };
+		E5ADAAC026C4521500D3BD6E /* NSDictionary+Safety.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+Safety.h"; sourceTree = "<group>"; };
+		E5ADAAC126C4521500D3BD6E /* NSAttributedString+Safety.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSAttributedString+Safety.h"; sourceTree = "<group>"; };
+		E5ADAAC226C4521500D3BD6E /* NSArray+Safety.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Safety.m"; sourceTree = "<group>"; };
+		E5ADAAC326C4521500D3BD6E /* NSString+Safety.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Safety.m"; sourceTree = "<group>"; };
+		E5ADAAC426C4521500D3BD6E /* NBSafetyCommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NBSafetyCommon.h; sourceTree = "<group>"; };
+		E5ADAAC526C4521500D3BD6E /* NSDictionary+Safety.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+Safety.m"; sourceTree = "<group>"; };
+		E5ADAAC626C4521500D3BD6E /* NSAttributedString+Safety.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSAttributedString+Safety.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,6 +147,7 @@
 		E5ADAA2726C3FC0E00D3BD6E /* HXProject */ = {
 			isa = PBXGroup;
 			children = (
+				E5ADAABC26C4521500D3BD6E /* ZYBSwizzle */,
 				E5ADAA4526C4305500D3BD6E /* AppDelegate */,
 				E5ADAA5226C430CD00D3BD6E /* Base */,
 				E5ADAA6B26C44C9F00D3BD6E /* Vender */,
@@ -281,6 +296,23 @@
 			path = NSURLSession;
 			sourceTree = "<group>";
 		};
+		E5ADAABC26C4521500D3BD6E /* ZYBSwizzle */ = {
+			isa = PBXGroup;
+			children = (
+				E5ADAABD26C4521500D3BD6E /* NSArray+Safety.h */,
+				E5ADAABE26C4521500D3BD6E /* NSString+Safety.h */,
+				E5ADAABF26C4521500D3BD6E /* NBSafetyKit.h */,
+				E5ADAAC026C4521500D3BD6E /* NSDictionary+Safety.h */,
+				E5ADAAC126C4521500D3BD6E /* NSAttributedString+Safety.h */,
+				E5ADAAC226C4521500D3BD6E /* NSArray+Safety.m */,
+				E5ADAAC326C4521500D3BD6E /* NSString+Safety.m */,
+				E5ADAAC426C4521500D3BD6E /* NBSafetyCommon.h */,
+				E5ADAAC526C4521500D3BD6E /* NSDictionary+Safety.m */,
+				E5ADAAC626C4521500D3BD6E /* NSAttributedString+Safety.m */,
+			);
+			path = ZYBSwizzle;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -395,11 +427,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				E5ADAA3026C3FC0E00D3BD6E /* ViewController.m in Sources */,
+				E5ADAACA26C4521500D3BD6E /* NSAttributedString+Safety.m in Sources */,
 				E5ADAA4F26C4307D00D3BD6E /* SceneDelegate.m in Sources */,
+				E5ADAAC726C4521500D3BD6E /* NSArray+Safety.m in Sources */,
+				E5ADAAC826C4521500D3BD6E /* NSString+Safety.m in Sources */,
 				E5ADAA5626C430CE00D3BD6E /* HXTabBarController.m in Sources */,
 				E5ADAA4E26C4307D00D3BD6E /* SceneDelegate+UIService.m in Sources */,
 				E5ADAA5126C4307D00D3BD6E /* AppDelegate.m in Sources */,
 				E5ADAA3B26C3FC1000D3BD6E /* main.m in Sources */,
+				E5ADAAC926C4521500D3BD6E /* NSDictionary+Safety.m in Sources */,
 				E5ADAA5026C4307D00D3BD6E /* AppDelegate+AppService.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
