@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		34CC6697A7339A89371DFE2C /* Pods_HXProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 935F9FCAED7054E1EA1547D1 /* Pods_HXProject.framework */; };
+		416B6C670124327831542B28 /* libPods-App-HXProject.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CDE3A508FE27A32CE176CF32 /* libPods-App-HXProject.a */; };
 		E5ADAA3026C3FC0E00D3BD6E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E5ADAA2F26C3FC0E00D3BD6E /* ViewController.m */; };
 		E5ADAA3326C3FC0E00D3BD6E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E5ADAA3126C3FC0E00D3BD6E /* Main.storyboard */; };
 		E5ADAA3526C3FC1000D3BD6E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E5ADAA3426C3FC1000D3BD6E /* Assets.xcassets */; };
@@ -25,9 +25,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1F8F8A35893B54DFF3F1F116 /* Pods-App-HXProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-App-HXProject.debug.xcconfig"; path = "Target Support Files/Pods-App-HXProject/Pods-App-HXProject.debug.xcconfig"; sourceTree = "<group>"; };
 		56C42A1BCF885A4633D6E89D /* Pods-HXProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HXProject.debug.xcconfig"; path = "Target Support Files/Pods-HXProject/Pods-HXProject.debug.xcconfig"; sourceTree = "<group>"; };
-		935F9FCAED7054E1EA1547D1 /* Pods_HXProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HXProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA05304A2881597236855BD5 /* Pods-HXProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HXProject.release.xcconfig"; path = "Target Support Files/Pods-HXProject/Pods-HXProject.release.xcconfig"; sourceTree = "<group>"; };
+		CDE3A508FE27A32CE176CF32 /* libPods-App-HXProject.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-App-HXProject.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DD77296AB46F5EC680C51C2F /* Pods-App-HXProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-App-HXProject.release.xcconfig"; path = "Target Support Files/Pods-App-HXProject/Pods-App-HXProject.release.xcconfig"; sourceTree = "<group>"; };
 		E5ADAA2526C3FC0E00D3BD6E /* HXProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HXProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5ADAA2E26C3FC0E00D3BD6E /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		E5ADAA2F26C3FC0E00D3BD6E /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
@@ -102,7 +104,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				34CC6697A7339A89371DFE2C /* Pods_HXProject.framework in Frameworks */,
+				416B6C670124327831542B28 /* libPods-App-HXProject.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -112,7 +114,7 @@
 		2F8D41A86FEFFD220014BCC4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				935F9FCAED7054E1EA1547D1 /* Pods_HXProject.framework */,
+				CDE3A508FE27A32CE176CF32 /* libPods-App-HXProject.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -122,6 +124,8 @@
 			children = (
 				56C42A1BCF885A4633D6E89D /* Pods-HXProject.debug.xcconfig */,
 				AA05304A2881597236855BD5 /* Pods-HXProject.release.xcconfig */,
+				1F8F8A35893B54DFF3F1F116 /* Pods-App-HXProject.debug.xcconfig */,
+				DD77296AB46F5EC680C51C2F /* Pods-App-HXProject.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -324,7 +328,6 @@
 				E5ADAA2126C3FC0E00D3BD6E /* Sources */,
 				E5ADAA2226C3FC0E00D3BD6E /* Frameworks */,
 				E5ADAA2326C3FC0E00D3BD6E /* Resources */,
-				2F32AD17F5B90BBBB197C0C4 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -380,23 +383,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		2F32AD17F5B90BBBB197C0C4 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-HXProject/Pods-HXProject-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-HXProject/Pods-HXProject-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-HXProject/Pods-HXProject-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		96A150A05C0C66C1E7C92604 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -412,7 +398,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-HXProject-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-App-HXProject-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -576,7 +562,7 @@
 		};
 		E5ADAA3F26C3FC1000D3BD6E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 56C42A1BCF885A4633D6E89D /* Pods-HXProject.debug.xcconfig */;
+			baseConfigurationReference = 1F8F8A35893B54DFF3F1F116 /* Pods-App-HXProject.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -595,7 +581,7 @@
 		};
 		E5ADAA4026C3FC1000D3BD6E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = AA05304A2881597236855BD5 /* Pods-HXProject.release.xcconfig */;
+			baseConfigurationReference = DD77296AB46F5EC680C51C2F /* Pods-App-HXProject.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
