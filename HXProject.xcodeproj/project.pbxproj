@@ -419,8 +419,6 @@
 				E5ADAFFA26C54DC000D3BD6E /* KVCPerson.m */,
 				E5ADAFF626C54DA100D3BD6E /* KVCViewController.h */,
 				E5ADAFF726C54DA100D3BD6E /* KVCViewController.m */,
-				E5ADB00426C5A8F200D3BD6E /* NSObject+KVCDefender.h */,
-				E5ADB00826C5A8F200D3BD6E /* NSObject+KVCDefender.m */,
 			);
 			path = KVC;
 			sourceTree = "<group>";
@@ -441,6 +439,8 @@
 				E5ADB00A26C5A8F200D3BD6E /* NSObject+MethodSwizzling.m */,
 				E5ADB00626C5A8F200D3BD6E /* NSObject+SelectorDefender.h */,
 				E5ADB00926C5A8F200D3BD6E /* NSObject+SelectorDefender.m */,
+				E5ADB00426C5A8F200D3BD6E /* NSObject+KVCDefender.h */,
+				E5ADB00826C5A8F200D3BD6E /* NSObject+KVCDefender.m */,
 			);
 			path = YSCDefender;
 			sourceTree = "<group>";
