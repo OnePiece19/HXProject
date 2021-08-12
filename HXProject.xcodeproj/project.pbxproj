@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 50;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -22,6 +22,10 @@
 		E5ADAAC826C4521500D3BD6E /* NSString+Safety.m in Sources */ = {isa = PBXBuildFile; fileRef = E5ADAAC326C4521500D3BD6E /* NSString+Safety.m */; };
 		E5ADAAC926C4521500D3BD6E /* NSDictionary+Safety.m in Sources */ = {isa = PBXBuildFile; fileRef = E5ADAAC526C4521500D3BD6E /* NSDictionary+Safety.m */; };
 		E5ADAACA26C4521500D3BD6E /* NSAttributedString+Safety.m in Sources */ = {isa = PBXBuildFile; fileRef = E5ADAAC626C4521500D3BD6E /* NSAttributedString+Safety.m */; };
+		E5ADAFE926C500C900D3BD6E /* HXNotificationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E5ADAFE826C500C900D3BD6E /* HXNotificationViewController.m */; };
+		E5ADAFED26C5052800D3BD6E /* HXNotificationCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = E5ADAFEC26C5052800D3BD6E /* HXNotificationCenter.m */; };
+		E5ADAFF026C505BB00D3BD6E /* HXObserverInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = E5ADAFEF26C505BB00D3BD6E /* HXObserverInfo.m */; };
+		E5ADAFF326C516D800D3BD6E /* CustomNotificationCenterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E5ADAFF126C516D800D3BD6E /* CustomNotificationCenterViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -97,6 +101,14 @@
 		E5ADAAC426C4521500D3BD6E /* NBSafetyCommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NBSafetyCommon.h; sourceTree = "<group>"; };
 		E5ADAAC526C4521500D3BD6E /* NSDictionary+Safety.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+Safety.m"; sourceTree = "<group>"; };
 		E5ADAAC626C4521500D3BD6E /* NSAttributedString+Safety.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSAttributedString+Safety.m"; sourceTree = "<group>"; };
+		E5ADAFE726C500C900D3BD6E /* HXNotificationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HXNotificationViewController.h; sourceTree = "<group>"; };
+		E5ADAFE826C500C900D3BD6E /* HXNotificationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HXNotificationViewController.m; sourceTree = "<group>"; };
+		E5ADAFEB26C5052800D3BD6E /* HXNotificationCenter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HXNotificationCenter.h; sourceTree = "<group>"; };
+		E5ADAFEC26C5052800D3BD6E /* HXNotificationCenter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HXNotificationCenter.m; sourceTree = "<group>"; };
+		E5ADAFEE26C505BB00D3BD6E /* HXObserverInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HXObserverInfo.h; sourceTree = "<group>"; };
+		E5ADAFEF26C505BB00D3BD6E /* HXObserverInfo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HXObserverInfo.m; sourceTree = "<group>"; };
+		E5ADAFF126C516D800D3BD6E /* CustomNotificationCenterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomNotificationCenterViewController.m; sourceTree = "<group>"; };
+		E5ADAFF226C516D800D3BD6E /* CustomNotificationCenterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomNotificationCenterViewController.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -151,6 +163,7 @@
 		E5ADAA2726C3FC0E00D3BD6E /* HXProject */ = {
 			isa = PBXGroup;
 			children = (
+				E5ADAFF426C517B300D3BD6E /* ObjectCBase */,
 				E5ADAABC26C4521500D3BD6E /* ZYBSwizzle */,
 				E5ADAA4526C4305500D3BD6E /* AppDelegate */,
 				E5ADAA5226C430CD00D3BD6E /* Base */,
@@ -317,6 +330,45 @@
 			path = ZYBSwizzle;
 			sourceTree = "<group>";
 		};
+		E5ADAFE526C5000B00D3BD6E /* NotificationCenter */ = {
+			isa = PBXGroup;
+			children = (
+				E5ADAFE726C500C900D3BD6E /* HXNotificationViewController.h */,
+				E5ADAFE826C500C900D3BD6E /* HXNotificationViewController.m */,
+				E5ADAFE626C5007E00D3BD6E /* NSNotificationCenter */,
+				E5ADAFEA26C5011300D3BD6E /* CustomNotificationCenter */,
+			);
+			path = NotificationCenter;
+			sourceTree = "<group>";
+		};
+		E5ADAFE626C5007E00D3BD6E /* NSNotificationCenter */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = NSNotificationCenter;
+			sourceTree = "<group>";
+		};
+		E5ADAFEA26C5011300D3BD6E /* CustomNotificationCenter */ = {
+			isa = PBXGroup;
+			children = (
+				E5ADAFF226C516D800D3BD6E /* CustomNotificationCenterViewController.h */,
+				E5ADAFF126C516D800D3BD6E /* CustomNotificationCenterViewController.m */,
+				E5ADAFEB26C5052800D3BD6E /* HXNotificationCenter.h */,
+				E5ADAFEC26C5052800D3BD6E /* HXNotificationCenter.m */,
+				E5ADAFEE26C505BB00D3BD6E /* HXObserverInfo.h */,
+				E5ADAFEF26C505BB00D3BD6E /* HXObserverInfo.m */,
+			);
+			path = CustomNotificationCenter;
+			sourceTree = "<group>";
+		};
+		E5ADAFF426C517B300D3BD6E /* ObjectCBase */ = {
+			isa = PBXGroup;
+			children = (
+				E5ADAFE526C5000B00D3BD6E /* NotificationCenter */,
+			);
+			path = ObjectCBase;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -417,10 +469,14 @@
 				E5ADAA4F26C4307D00D3BD6E /* SceneDelegate.m in Sources */,
 				E5ADAAC726C4521500D3BD6E /* NSArray+Safety.m in Sources */,
 				E5ADAAC826C4521500D3BD6E /* NSString+Safety.m in Sources */,
+				E5ADAFF026C505BB00D3BD6E /* HXObserverInfo.m in Sources */,
+				E5ADAFF326C516D800D3BD6E /* CustomNotificationCenterViewController.m in Sources */,
 				E5ADAA5626C430CE00D3BD6E /* HXTabBarController.m in Sources */,
 				E5ADAA4E26C4307D00D3BD6E /* SceneDelegate+UIService.m in Sources */,
+				E5ADAFE926C500C900D3BD6E /* HXNotificationViewController.m in Sources */,
 				E5ADAA5126C4307D00D3BD6E /* AppDelegate.m in Sources */,
 				E5ADAA3B26C3FC1000D3BD6E /* main.m in Sources */,
+				E5ADAFED26C5052800D3BD6E /* HXNotificationCenter.m in Sources */,
 				E5ADAAC926C4521500D3BD6E /* NSDictionary+Safety.m in Sources */,
 				E5ADAA5026C4307D00D3BD6E /* AppDelegate+AppService.m in Sources */,
 			);
