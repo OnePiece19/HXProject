@@ -26,6 +26,16 @@
 		E5ADAFED26C5052800D3BD6E /* HXNotificationCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = E5ADAFEC26C5052800D3BD6E /* HXNotificationCenter.m */; };
 		E5ADAFF026C505BB00D3BD6E /* HXObserverInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = E5ADAFEF26C505BB00D3BD6E /* HXObserverInfo.m */; };
 		E5ADAFF326C516D800D3BD6E /* CustomNotificationCenterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E5ADAFF126C516D800D3BD6E /* CustomNotificationCenterViewController.m */; };
+		E5ADAFF826C54DA200D3BD6E /* KVCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E5ADAFF726C54DA100D3BD6E /* KVCViewController.m */; };
+		E5ADAFFB26C54DC000D3BD6E /* KVCPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = E5ADAFFA26C54DC000D3BD6E /* KVCPerson.m */; };
+		E5ADAFFE26C54DF000D3BD6E /* KVCAddress.m in Sources */ = {isa = PBXBuildFile; fileRef = E5ADAFFD26C54DF000D3BD6E /* KVCAddress.m */; };
+		E5ADB00C26C5A8F200D3BD6E /* NSObject+KVCDefender.m in Sources */ = {isa = PBXBuildFile; fileRef = E5ADB00826C5A8F200D3BD6E /* NSObject+KVCDefender.m */; };
+		E5ADB00D26C5A8F200D3BD6E /* NSObject+SelectorDefender.m in Sources */ = {isa = PBXBuildFile; fileRef = E5ADB00926C5A8F200D3BD6E /* NSObject+SelectorDefender.m */; };
+		E5ADB00E26C5A8F200D3BD6E /* NSObject+MethodSwizzling.m in Sources */ = {isa = PBXBuildFile; fileRef = E5ADB00A26C5A8F200D3BD6E /* NSObject+MethodSwizzling.m */; };
+		E5ADB00F26C5A8F200D3BD6E /* NSObject+KVODefender.m in Sources */ = {isa = PBXBuildFile; fileRef = E5ADB00B26C5A8F200D3BD6E /* NSObject+KVODefender.m */; };
+		E5ADB01626C5AB0B00D3BD6E /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E5ADB01526C5AB0B00D3BD6E /* BaseViewController.m */; };
+		E5ADB02726C5AF7D00D3BD6E /* KVCCrashObject.m in Sources */ = {isa = PBXBuildFile; fileRef = E5ADB02626C5AF7D00D3BD6E /* KVCCrashObject.m */; };
+		E5ADB02826C5AF7D00D3BD6E /* TestKVCCrashVC.m in Sources */ = {isa = PBXBuildFile; fileRef = E5ADB02426C5AF7C00D3BD6E /* TestKVCCrashVC.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -109,6 +119,27 @@
 		E5ADAFEF26C505BB00D3BD6E /* HXObserverInfo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HXObserverInfo.m; sourceTree = "<group>"; };
 		E5ADAFF126C516D800D3BD6E /* CustomNotificationCenterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomNotificationCenterViewController.m; sourceTree = "<group>"; };
 		E5ADAFF226C516D800D3BD6E /* CustomNotificationCenterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomNotificationCenterViewController.h; sourceTree = "<group>"; };
+		E5ADAFF626C54DA100D3BD6E /* KVCViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KVCViewController.h; sourceTree = "<group>"; };
+		E5ADAFF726C54DA100D3BD6E /* KVCViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KVCViewController.m; sourceTree = "<group>"; };
+		E5ADAFF926C54DC000D3BD6E /* KVCPerson.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KVCPerson.h; sourceTree = "<group>"; };
+		E5ADAFFA26C54DC000D3BD6E /* KVCPerson.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KVCPerson.m; sourceTree = "<group>"; };
+		E5ADAFFC26C54DF000D3BD6E /* KVCAddress.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KVCAddress.h; sourceTree = "<group>"; };
+		E5ADAFFD26C54DF000D3BD6E /* KVCAddress.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KVCAddress.m; sourceTree = "<group>"; };
+		E5ADB00426C5A8F200D3BD6E /* NSObject+KVCDefender.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+KVCDefender.h"; sourceTree = "<group>"; };
+		E5ADB00526C5A8F200D3BD6E /* NSObject+MethodSwizzling.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+MethodSwizzling.h"; sourceTree = "<group>"; };
+		E5ADB00626C5A8F200D3BD6E /* NSObject+SelectorDefender.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+SelectorDefender.h"; sourceTree = "<group>"; };
+		E5ADB00726C5A8F200D3BD6E /* NSObject+KVODefender.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+KVODefender.h"; sourceTree = "<group>"; };
+		E5ADB00826C5A8F200D3BD6E /* NSObject+KVCDefender.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+KVCDefender.m"; sourceTree = "<group>"; };
+		E5ADB00926C5A8F200D3BD6E /* NSObject+SelectorDefender.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+SelectorDefender.m"; sourceTree = "<group>"; };
+		E5ADB00A26C5A8F200D3BD6E /* NSObject+MethodSwizzling.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+MethodSwizzling.m"; sourceTree = "<group>"; };
+		E5ADB00B26C5A8F200D3BD6E /* NSObject+KVODefender.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+KVODefender.m"; sourceTree = "<group>"; };
+		E5ADB01326C5AB0B00D3BD6E /* BaseDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseDefine.h; sourceTree = "<group>"; };
+		E5ADB01426C5AB0B00D3BD6E /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
+		E5ADB01526C5AB0B00D3BD6E /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
+		E5ADB02326C5AF7C00D3BD6E /* KVCCrashObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KVCCrashObject.h; sourceTree = "<group>"; };
+		E5ADB02426C5AF7C00D3BD6E /* TestKVCCrashVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestKVCCrashVC.m; sourceTree = "<group>"; };
+		E5ADB02526C5AF7C00D3BD6E /* TestKVCCrashVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestKVCCrashVC.h; sourceTree = "<group>"; };
+		E5ADB02626C5AF7D00D3BD6E /* KVCCrashObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KVCCrashObject.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -197,6 +228,9 @@
 		E5ADAA5226C430CD00D3BD6E /* Base */ = {
 			isa = PBXGroup;
 			children = (
+				E5ADB01326C5AB0B00D3BD6E /* BaseDefine.h */,
+				E5ADB01426C5AB0B00D3BD6E /* BaseViewController.h */,
+				E5ADB01526C5AB0B00D3BD6E /* BaseViewController.m */,
 				E5ADAA5326C430CD00D3BD6E /* TabBarController */,
 			);
 			path = Base;
@@ -364,9 +398,51 @@
 		E5ADAFF426C517B300D3BD6E /* ObjectCBase */ = {
 			isa = PBXGroup;
 			children = (
+				E5ADB00326C5A8F200D3BD6E /* YSCDefender */,
+				E5ADAFFF26C5507A00D3BD6E /* KVO */,
+				E5ADAFF526C51BF800D3BD6E /* KVC */,
 				E5ADAFE526C5000B00D3BD6E /* NotificationCenter */,
 			);
 			path = ObjectCBase;
+			sourceTree = "<group>";
+		};
+		E5ADAFF526C51BF800D3BD6E /* KVC */ = {
+			isa = PBXGroup;
+			children = (
+				E5ADB02326C5AF7C00D3BD6E /* KVCCrashObject.h */,
+				E5ADB02626C5AF7D00D3BD6E /* KVCCrashObject.m */,
+				E5ADB02526C5AF7C00D3BD6E /* TestKVCCrashVC.h */,
+				E5ADB02426C5AF7C00D3BD6E /* TestKVCCrashVC.m */,
+				E5ADAFFC26C54DF000D3BD6E /* KVCAddress.h */,
+				E5ADAFFD26C54DF000D3BD6E /* KVCAddress.m */,
+				E5ADAFF926C54DC000D3BD6E /* KVCPerson.h */,
+				E5ADAFFA26C54DC000D3BD6E /* KVCPerson.m */,
+				E5ADAFF626C54DA100D3BD6E /* KVCViewController.h */,
+				E5ADAFF726C54DA100D3BD6E /* KVCViewController.m */,
+				E5ADB00426C5A8F200D3BD6E /* NSObject+KVCDefender.h */,
+				E5ADB00826C5A8F200D3BD6E /* NSObject+KVCDefender.m */,
+			);
+			path = KVC;
+			sourceTree = "<group>";
+		};
+		E5ADAFFF26C5507A00D3BD6E /* KVO */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = KVO;
+			sourceTree = "<group>";
+		};
+		E5ADB00326C5A8F200D3BD6E /* YSCDefender */ = {
+			isa = PBXGroup;
+			children = (
+				E5ADB00726C5A8F200D3BD6E /* NSObject+KVODefender.h */,
+				E5ADB00B26C5A8F200D3BD6E /* NSObject+KVODefender.m */,
+				E5ADB00526C5A8F200D3BD6E /* NSObject+MethodSwizzling.h */,
+				E5ADB00A26C5A8F200D3BD6E /* NSObject+MethodSwizzling.m */,
+				E5ADB00626C5A8F200D3BD6E /* NSObject+SelectorDefender.h */,
+				E5ADB00926C5A8F200D3BD6E /* NSObject+SelectorDefender.m */,
+			);
+			path = YSCDefender;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -465,20 +541,30 @@
 			buildActionMask = 2147483647;
 			files = (
 				E5ADAA3026C3FC0E00D3BD6E /* ViewController.m in Sources */,
+				E5ADB01626C5AB0B00D3BD6E /* BaseViewController.m in Sources */,
+				E5ADB00F26C5A8F200D3BD6E /* NSObject+KVODefender.m in Sources */,
+				E5ADAFF826C54DA200D3BD6E /* KVCViewController.m in Sources */,
 				E5ADAACA26C4521500D3BD6E /* NSAttributedString+Safety.m in Sources */,
 				E5ADAA4F26C4307D00D3BD6E /* SceneDelegate.m in Sources */,
+				E5ADB02826C5AF7D00D3BD6E /* TestKVCCrashVC.m in Sources */,
 				E5ADAAC726C4521500D3BD6E /* NSArray+Safety.m in Sources */,
 				E5ADAAC826C4521500D3BD6E /* NSString+Safety.m in Sources */,
 				E5ADAFF026C505BB00D3BD6E /* HXObserverInfo.m in Sources */,
 				E5ADAFF326C516D800D3BD6E /* CustomNotificationCenterViewController.m in Sources */,
 				E5ADAA5626C430CE00D3BD6E /* HXTabBarController.m in Sources */,
 				E5ADAA4E26C4307D00D3BD6E /* SceneDelegate+UIService.m in Sources */,
+				E5ADAFFB26C54DC000D3BD6E /* KVCPerson.m in Sources */,
+				E5ADB00D26C5A8F200D3BD6E /* NSObject+SelectorDefender.m in Sources */,
 				E5ADAFE926C500C900D3BD6E /* HXNotificationViewController.m in Sources */,
+				E5ADB00E26C5A8F200D3BD6E /* NSObject+MethodSwizzling.m in Sources */,
 				E5ADAA5126C4307D00D3BD6E /* AppDelegate.m in Sources */,
 				E5ADAA3B26C3FC1000D3BD6E /* main.m in Sources */,
 				E5ADAFED26C5052800D3BD6E /* HXNotificationCenter.m in Sources */,
+				E5ADAFFE26C54DF000D3BD6E /* KVCAddress.m in Sources */,
 				E5ADAAC926C4521500D3BD6E /* NSDictionary+Safety.m in Sources */,
+				E5ADB00C26C5A8F200D3BD6E /* NSObject+KVCDefender.m in Sources */,
 				E5ADAA5026C4307D00D3BD6E /* AppDelegate+AppService.m in Sources */,
+				E5ADB02726C5AF7D00D3BD6E /* KVCCrashObject.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -7,6 +7,8 @@
 
 #import "HXTabBarController.h"
 
+#import "ViewController.h"
+
 @interface HXTabBarController ()
 
 @end
@@ -37,12 +39,14 @@
     [self setupChildViewController:homeVC2 title:@"测试" imageName:@"home_page" seleceImageName:@"home_page"];
      */
     
-    UIViewController * temp = [[UIViewController alloc] init];
+    ViewController * temp = [[ViewController alloc] init];
     temp.view.backgroundColor = [UIColor grayColor];
-    temp.title = @"1";
-    temp.tabBarItem.title = @"1";
+    temp.title = @"基础OC";
+    temp.tabBarItem.title = @"基础OC";
     
-    self.viewControllers = @[temp];
+    UINavigationController * nav = [[UINavigationController alloc] initWithRootViewController:temp];
+    
+    self.viewControllers = @[nav];
     self.selectedIndex = 0;
 }
 
