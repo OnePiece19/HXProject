@@ -173,6 +173,19 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		E579D4BB26C68C1A00640453 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E5ADAFFC26C54DF000D3BD6E /* KVCAddress.h */,
+				E5ADAFFD26C54DF000D3BD6E /* KVCAddress.m */,
+				E5ADAFF926C54DC000D3BD6E /* KVCPerson.h */,
+				E5ADAFFA26C54DC000D3BD6E /* KVCPerson.m */,
+				E5ADB02326C5AF7C00D3BD6E /* KVCCrashObject.h */,
+				E5ADB02626C5AF7D00D3BD6E /* KVCCrashObject.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		E5ADAA1C26C3FC0E00D3BD6E = {
 			isa = PBXGroup;
 			children = (
@@ -409,16 +422,11 @@
 		E5ADAFF526C51BF800D3BD6E /* KVC */ = {
 			isa = PBXGroup;
 			children = (
-				E5ADB02326C5AF7C00D3BD6E /* KVCCrashObject.h */,
-				E5ADB02626C5AF7D00D3BD6E /* KVCCrashObject.m */,
 				E5ADB02526C5AF7C00D3BD6E /* TestKVCCrashVC.h */,
 				E5ADB02426C5AF7C00D3BD6E /* TestKVCCrashVC.m */,
-				E5ADAFFC26C54DF000D3BD6E /* KVCAddress.h */,
-				E5ADAFFD26C54DF000D3BD6E /* KVCAddress.m */,
-				E5ADAFF926C54DC000D3BD6E /* KVCPerson.h */,
-				E5ADAFFA26C54DC000D3BD6E /* KVCPerson.m */,
 				E5ADAFF626C54DA100D3BD6E /* KVCViewController.h */,
 				E5ADAFF726C54DA100D3BD6E /* KVCViewController.m */,
+				E579D4BB26C68C1A00640453 /* Model */,
 			);
 			path = KVC;
 			sourceTree = "<group>";

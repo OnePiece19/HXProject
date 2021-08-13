@@ -12,7 +12,12 @@
 #import "TestKVCCrashVC.h"
 
 
-@interface ViewController ()
+@interface ViewController () <UITableViewDelegate, UITableViewDataSource>
+{
+    NSArray *_titleArray;
+}
+
+@property (nonatomic, strong) UITableView *tableView;
 
 @end
 
@@ -20,40 +25,84 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
-    self.view.backgroundColor = [UIColor whiteColor];
-    UIButton *btn = [UIButton buttonWithType:UIButtonTypeSystem];
-    [btn setTitle:@"通知中心验证" forState:UIControlStateNormal];
-    [btn setTitleColor:[UIColor blueColor] forState:UIControlStateNormal];
-    btn.frame = CGRectMake(0, 0, 100, 60);
-    [btn addTarget:self action:@selector(testNotification) forControlEvents:UIControlEventTouchUpInside];
-    [self.view addSubview:btn];
-    btn.center = self.view.center;
     
+    _titleArray = @[
+                    @{
+                        @"title" : @"Unrecognized Selector Crash",
+                        @"class" : @"TestUnrecognizedSelVC"
+                        },
+                    @{
+                        @"title" : @"KVO Crash",
+                        @"class" : @"TestKVOCrashVC"
+                        },
+                    @{
+                        @"title" : @"KVC Crash",
+                        @"class" : @"TestKVCCrashVC"
+                        },
+                    @{
+                        @"title" : @"Notification Crash",
+                        @"class" : @"TestNotificationCrashVC"
+                        },
+                    @{
+                        @"title" : @"NSTimer Crash",
+                        @"class" : @"TestTimerCrashVC"
+                        },
+                    @{
+                        @"title" : @"Containers Crash",
+                        @"class" : @"TestContainersVC"
+                        },
+                    @{
+                        @"title" : @"NSNull Crash",
+                        @"class" : @"TestNullVC"
+                        }
+                    ];
     
-    UIButton *btn1 = [UIButton buttonWithType:UIButtonTypeSystem];
-    [btn1 setTitle:@"KVC验证" forState:UIControlStateNormal];
-    [btn1 setTitleColor:[UIColor blueColor] forState:UIControlStateNormal];
-    btn1.frame = CGRectMake(0, 0, 100, 60);
-    [btn1 addTarget:self action:@selector(testKVC) forControlEvents:UIControlEventTouchUpInside];
-    [self.view addSubview:btn1];
-    btn1.center = self.view.center;
-    CGRect frame = btn1.frame;
-    frame.origin.y += 60.0f;
-    btn1.frame = frame;
+    [self.view addSubview:self.tableView];
 }
 
-- (void)testNotification {
-    HXNotificationViewController *vc = [HXNotificationViewController new];
-    [self.navigationController pushViewController:vc animated:YES];
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
+    return 1;
 }
 
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    return _titleArray.count;
+}
 
-- (void)testKVC {
-    TestKVCCrashVC *vc = [TestKVCCrashVC new];
-    [self presentViewController:vc animated:YES completion:nil];
-//    [self.navigationController pushViewController:vc animated:YES];
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+    return 44;
+}
 
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    static NSString *CellID = @"mainCellID";
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellID];
+    if (cell == nil) {
+        cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellID];
+    }
+    cell.textLabel.text = [_titleArray[indexPath.row] objectForKey:@"title"];
+    return cell;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    NSDictionary *item =  _titleArray[indexPath.row];
+    Class cls = NSClassFromString([item objectForKey:@"class"]);
+    [self presentViewController:[[cls alloc] init] animated:YES completion:nil];
+}
+
+/**
+ * tableView初始化
+ */
+- (UITableView *)tableView {
+    if (!_tableView) {
+        _tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, UIScreenWidth, UIScreenHeigh) style:UITableViewStyleGrouped];
+        _tableView.delegate = self;
+        _tableView.dataSource = self;
+    }
+    return _tableView;
+}
+
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
+    
+    [[NSNotificationCenter defaultCenter] postNotificationName:@"loadingCompelete" object:nil userInfo:@{@"page":@(2)}];
 }
 
 @end
