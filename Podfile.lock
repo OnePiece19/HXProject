@@ -1,8 +1,16 @@
 PODS:
   - HXLeetCode (0.1.0)
+  - YYCategories (1.0.4):
+    - YYCategories/no-arc (= 1.0.4)
+  - YYCategories/no-arc (1.0.4)
 
 DEPENDENCIES:
   - HXLeetCode (from `Lib/HXLeetCode`)
+  - YYCategories
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - YYCategories
 
 EXTERNAL SOURCES:
   HXLeetCode:
@@ -10,7 +18,8 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   HXLeetCode: ecb69386ac7f40e8570fc77c53d2947f08434180
+  YYCategories: 6bcd4314c6661a561410dce4a793379ebd306abd
 
-PODFILE CHECKSUM: 8afa8d705c119ed0e9fe04e9b3ee2e425c7dd831
+PODFILE CHECKSUM: c329f1214575c990a0a44fde4e5a9bdd52ffa1e1
 
 COCOAPODS: 1.9.2

@@ -6,10 +6,12 @@
 //
 
 #import "HXTabBarController.h"
+#import "HXHomeViewController.h"
 
-#import "ViewController.h"
 
 @interface HXTabBarController ()
+
+@property (nonatomic,strong) NSMutableArray * VCS;
 
 @end
 
@@ -29,27 +31,45 @@
 }
 
 -(void)setUpAllChildViewController{
+    _VCS = @[].mutableCopy;
+    
+   
+    
+    HXHomeViewController * homeVC = [[HXHomeViewController alloc] init];
+    [self setupChildViewController:homeVC title:@"首页" imageName:@"tab_homeInfo" seleceImageName:@"tab_homeInfoLight"];
     
     
-    /** 测试代码
-    PBLoginViewController * loginVC = [[PBLoginViewController alloc] initWithNibName:@"PBLoginViewController" bundle:[NSBundle mainBundle]];
-    [self setupChildViewController:loginVC title:@"登录" imageName:@"home_page" seleceImageName:@"home_page"];
-
-    PBTestViewController * homeVC2 = [[PBTestViewController alloc] init];
-    [self setupChildViewController:homeVC2 title:@"测试" imageName:@"home_page" seleceImageName:@"home_page"];
-     */
-    
-    ViewController * temp = [[ViewController alloc] init];
-    temp.view.backgroundColor = [UIColor grayColor];
-    temp.title = @"基础OC";
-    temp.tabBarItem.title = @"基础OC";
-    
-    UINavigationController * nav = [[UINavigationController alloc] initWithRootViewController:temp];
-    
-    self.viewControllers = @[nav];
+////    NSString * userid = userManager.curUserInfo.user_id;
+////    NSString * url = [NSString stringWithFormat:@"http://party-tools-web.t.eoffcn.com/formlist?user=%@",userid];
+////    PBActivityViewController * activityVC = [[PBActivityViewController alloc] initWithUrl:url];
+////    [self setupChildViewController:activityVC title:@"活动" imageName:@"tab_activity" seleceImageName:@"tab_activityLight"];
+//
+//    PBMineViewController * mineVC = [[PBMineViewController alloc] init];
+//    [self setupChildViewController:mineVC title:@"我的" imageName:@"tab_mine" seleceImageName:@"tab_mineLight"];
+    self.viewControllers = _VCS;
     self.selectedIndex = 0;
+    
 }
 
+-(void)setupChildViewController:(UIViewController*)controller title:(NSString *)title imageName:(NSString *)imageName seleceImageName:(NSString *)selectImageName{
+    controller.title = title;
+    controller.tabBarItem.title = title;
+    controller.tabBarItem.image = [[UIImage imageNamed:imageName] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+    controller.tabBarItem.selectedImage = [[UIImage imageNamed:selectImageName] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+    
+    //未选中字体颜色
+    [controller.tabBarItem setTitleTextAttributes:@{NSForegroundColorAttributeName:CTabFontColor,
+                                                    NSFontAttributeName:SYSTEMFONT(10.0f)}
+                                         forState:UIControlStateNormal];
+    //选中字体颜色
+    [controller.tabBarItem setTitleTextAttributes:@{NSForegroundColorAttributeName:CTabFontColorLight,
+                                                    NSFontAttributeName:SYSTEMFONT(10.0f)}
+                                         forState:UIControlStateSelected];
+    
+    
+    PBNavigationController * nav = [[PBNavigationController alloc] initWithRootViewController:controller];
+    [_VCS addObject:nav];
+}
 
 
 @end

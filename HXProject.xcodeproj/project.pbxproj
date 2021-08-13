@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		416B6C670124327831542B28 /* libPods-App-HXProject.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CDE3A508FE27A32CE176CF32 /* libPods-App-HXProject.a */; };
+		E579D4BE26C6A7EC00640453 /* HXHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E579D4BD26C6A7EC00640453 /* HXHomeViewController.m */; };
+		E579D4C226C6A93A00640453 /* PBNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = E579D4C126C6A93A00640453 /* PBNavigationController.m */; };
+		E579D4CF26C6A9A300640453 /* PBNotiConst.m in Sources */ = {isa = PBXBuildFile; fileRef = E579D4C626C6A9A300640453 /* PBNotiConst.m */; };
+		E579D4D026C6A9A300640453 /* PBURLConst.m in Sources */ = {isa = PBXBuildFile; fileRef = E579D4CB26C6A9A300640453 /* PBURLConst.m */; };
+		E579D4D626C6FC9200640453 /* PBViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E579D4D526C6FC9200640453 /* PBViewController.m */; };
 		E5ADAA3026C3FC0E00D3BD6E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E5ADAA2F26C3FC0E00D3BD6E /* ViewController.m */; };
 		E5ADAA3326C3FC0E00D3BD6E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E5ADAA3126C3FC0E00D3BD6E /* Main.storyboard */; };
 		E5ADAA3526C3FC1000D3BD6E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E5ADAA3426C3FC1000D3BD6E /* Assets.xcassets */; };
@@ -33,7 +38,7 @@
 		E5ADB00D26C5A8F200D3BD6E /* NSObject+SelectorDefender.m in Sources */ = {isa = PBXBuildFile; fileRef = E5ADB00926C5A8F200D3BD6E /* NSObject+SelectorDefender.m */; };
 		E5ADB00E26C5A8F200D3BD6E /* NSObject+MethodSwizzling.m in Sources */ = {isa = PBXBuildFile; fileRef = E5ADB00A26C5A8F200D3BD6E /* NSObject+MethodSwizzling.m */; };
 		E5ADB00F26C5A8F200D3BD6E /* NSObject+KVODefender.m in Sources */ = {isa = PBXBuildFile; fileRef = E5ADB00B26C5A8F200D3BD6E /* NSObject+KVODefender.m */; };
-		E5ADB01626C5AB0B00D3BD6E /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E5ADB01526C5AB0B00D3BD6E /* BaseViewController.m */; };
+		E5ADB01626C5AB0B00D3BD6E /* BaseCrashViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E5ADB01526C5AB0B00D3BD6E /* BaseCrashViewController.m */; };
 		E5ADB02726C5AF7D00D3BD6E /* KVCCrashObject.m in Sources */ = {isa = PBXBuildFile; fileRef = E5ADB02626C5AF7D00D3BD6E /* KVCCrashObject.m */; };
 		E5ADB02826C5AF7D00D3BD6E /* TestKVCCrashVC.m in Sources */ = {isa = PBXBuildFile; fileRef = E5ADB02426C5AF7C00D3BD6E /* TestKVCCrashVC.m */; };
 /* End PBXBuildFile section */
@@ -44,6 +49,24 @@
 		AA05304A2881597236855BD5 /* Pods-HXProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HXProject.release.xcconfig"; path = "Target Support Files/Pods-HXProject/Pods-HXProject.release.xcconfig"; sourceTree = "<group>"; };
 		CDE3A508FE27A32CE176CF32 /* libPods-App-HXProject.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-App-HXProject.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD77296AB46F5EC680C51C2F /* Pods-App-HXProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-App-HXProject.release.xcconfig"; path = "Target Support Files/Pods-App-HXProject/Pods-App-HXProject.release.xcconfig"; sourceTree = "<group>"; };
+		E579D4BC26C6A7EC00640453 /* HXHomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HXHomeViewController.h; sourceTree = "<group>"; };
+		E579D4BD26C6A7EC00640453 /* HXHomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HXHomeViewController.m; sourceTree = "<group>"; };
+		E579D4C026C6A93A00640453 /* PBNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PBNavigationController.h; sourceTree = "<group>"; };
+		E579D4C126C6A93A00640453 /* PBNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PBNavigationController.m; sourceTree = "<group>"; };
+		E579D4C426C6A9A300640453 /* PBFrameMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PBFrameMacros.h; sourceTree = "<group>"; };
+		E579D4C526C6A9A300640453 /* PBColorMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PBColorMacros.h; sourceTree = "<group>"; };
+		E579D4C626C6A9A300640453 /* PBNotiConst.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PBNotiConst.m; sourceTree = "<group>"; };
+		E579D4C726C6A9A300640453 /* PBURLConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PBURLConst.h; sourceTree = "<group>"; };
+		E579D4C826C6A9A300640453 /* PBUtilsMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PBUtilsMacros.h; sourceTree = "<group>"; };
+		E579D4C926C6A9A300640453 /* PBFontMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PBFontMacros.h; sourceTree = "<group>"; };
+		E579D4CA26C6A9A300640453 /* PBNotiConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PBNotiConst.h; sourceTree = "<group>"; };
+		E579D4CB26C6A9A300640453 /* PBURLConst.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PBURLConst.m; sourceTree = "<group>"; };
+		E579D4CC26C6A9A300640453 /* LRMacroDefinitionHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LRMacroDefinitionHeader.h; sourceTree = "<group>"; };
+		E579D4CD26C6A9A300640453 /* PBThirdMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PBThirdMacros.h; sourceTree = "<group>"; };
+		E579D4CE26C6A9A300640453 /* PBEventList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PBEventList.h; sourceTree = "<group>"; };
+		E579D4D226C6AAE200640453 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		E579D4D426C6FC9200640453 /* PBViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PBViewController.h; sourceTree = "<group>"; };
+		E579D4D526C6FC9200640453 /* PBViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PBViewController.m; sourceTree = "<group>"; };
 		E5ADAA2526C3FC0E00D3BD6E /* HXProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HXProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5ADAA2E26C3FC0E00D3BD6E /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		E5ADAA2F26C3FC0E00D3BD6E /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
@@ -134,8 +157,8 @@
 		E5ADB00A26C5A8F200D3BD6E /* NSObject+MethodSwizzling.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+MethodSwizzling.m"; sourceTree = "<group>"; };
 		E5ADB00B26C5A8F200D3BD6E /* NSObject+KVODefender.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+KVODefender.m"; sourceTree = "<group>"; };
 		E5ADB01326C5AB0B00D3BD6E /* BaseDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseDefine.h; sourceTree = "<group>"; };
-		E5ADB01426C5AB0B00D3BD6E /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
-		E5ADB01526C5AB0B00D3BD6E /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
+		E5ADB01426C5AB0B00D3BD6E /* BaseCrashViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseCrashViewController.h; sourceTree = "<group>"; };
+		E5ADB01526C5AB0B00D3BD6E /* BaseCrashViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseCrashViewController.m; sourceTree = "<group>"; };
 		E5ADB02326C5AF7C00D3BD6E /* KVCCrashObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KVCCrashObject.h; sourceTree = "<group>"; };
 		E5ADB02426C5AF7C00D3BD6E /* TestKVCCrashVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestKVCCrashVC.m; sourceTree = "<group>"; };
 		E5ADB02526C5AF7C00D3BD6E /* TestKVCCrashVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestKVCCrashVC.h; sourceTree = "<group>"; };
@@ -186,10 +209,62 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		E579D4BF26C6A93A00640453 /* NavigationController */ = {
+			isa = PBXGroup;
+			children = (
+				E579D4C026C6A93A00640453 /* PBNavigationController.h */,
+				E579D4C126C6A93A00640453 /* PBNavigationController.m */,
+			);
+			path = NavigationController;
+			sourceTree = "<group>";
+		};
+		E579D4C326C6A9A300640453 /* Define */ = {
+			isa = PBXGroup;
+			children = (
+				E579D4C426C6A9A300640453 /* PBFrameMacros.h */,
+				E579D4C526C6A9A300640453 /* PBColorMacros.h */,
+				E579D4C626C6A9A300640453 /* PBNotiConst.m */,
+				E579D4C726C6A9A300640453 /* PBURLConst.h */,
+				E579D4C826C6A9A300640453 /* PBUtilsMacros.h */,
+				E579D4C926C6A9A300640453 /* PBFontMacros.h */,
+				E579D4CA26C6A9A300640453 /* PBNotiConst.h */,
+				E579D4CB26C6A9A300640453 /* PBURLConst.m */,
+				E579D4CC26C6A9A300640453 /* LRMacroDefinitionHeader.h */,
+				E579D4CD26C6A9A300640453 /* PBThirdMacros.h */,
+				E579D4CE26C6A9A300640453 /* PBEventList.h */,
+			);
+			path = Define;
+			sourceTree = "<group>";
+		};
+		E579D4D126C6AAA800640453 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E5ADAA3126C3FC0E00D3BD6E /* Main.storyboard */,
+				E5ADAA3426C3FC1000D3BD6E /* Assets.xcassets */,
+				E5ADAA3626C3FC1000D3BD6E /* LaunchScreen.storyboard */,
+				E5ADAA3926C3FC1000D3BD6E /* Info.plist */,
+				E5ADAA3A26C3FC1000D3BD6E /* main.m */,
+				E579D4D226C6AAE200640453 /* PrefixHeader.pch */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E579D4D326C6FC7A00640453 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				E5ADB01426C5AB0B00D3BD6E /* BaseCrashViewController.h */,
+				E5ADB01526C5AB0B00D3BD6E /* BaseCrashViewController.m */,
+				E579D4D426C6FC9200640453 /* PBViewController.h */,
+				E579D4D526C6FC9200640453 /* PBViewController.m */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
 		E5ADAA1C26C3FC0E00D3BD6E = {
 			isa = PBXGroup;
 			children = (
 				E5ADAA2726C3FC0E00D3BD6E /* HXProject */,
+				E579D4D126C6AAA800640453 /* Supporting Files */,
 				E5ADAA2626C3FC0E00D3BD6E /* Products */,
 				C395B5C15B7E8CC22C279445 /* Pods */,
 				2F8D41A86FEFFD220014BCC4 /* Frameworks */,
@@ -207,6 +282,7 @@
 		E5ADAA2726C3FC0E00D3BD6E /* HXProject */ = {
 			isa = PBXGroup;
 			children = (
+				E579D4C326C6A9A300640453 /* Define */,
 				E5ADAFF426C517B300D3BD6E /* ObjectCBase */,
 				E5ADAABC26C4521500D3BD6E /* ZYBSwizzle */,
 				E5ADAA4526C4305500D3BD6E /* AppDelegate */,
@@ -214,11 +290,6 @@
 				E5ADAA6B26C44C9F00D3BD6E /* Vender */,
 				E5ADAA2E26C3FC0E00D3BD6E /* ViewController.h */,
 				E5ADAA2F26C3FC0E00D3BD6E /* ViewController.m */,
-				E5ADAA3126C3FC0E00D3BD6E /* Main.storyboard */,
-				E5ADAA3426C3FC1000D3BD6E /* Assets.xcassets */,
-				E5ADAA3626C3FC1000D3BD6E /* LaunchScreen.storyboard */,
-				E5ADAA3926C3FC1000D3BD6E /* Info.plist */,
-				E5ADAA3A26C3FC1000D3BD6E /* main.m */,
 			);
 			path = HXProject;
 			sourceTree = "<group>";
@@ -241,10 +312,10 @@
 		E5ADAA5226C430CD00D3BD6E /* Base */ = {
 			isa = PBXGroup;
 			children = (
-				E5ADB01326C5AB0B00D3BD6E /* BaseDefine.h */,
-				E5ADB01426C5AB0B00D3BD6E /* BaseViewController.h */,
-				E5ADB01526C5AB0B00D3BD6E /* BaseViewController.m */,
+				E579D4D326C6FC7A00640453 /* ViewController */,
 				E5ADAA5326C430CD00D3BD6E /* TabBarController */,
+				E579D4BF26C6A93A00640453 /* NavigationController */,
+				E5ADB01326C5AB0B00D3BD6E /* BaseDefine.h */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -411,6 +482,8 @@
 		E5ADAFF426C517B300D3BD6E /* ObjectCBase */ = {
 			isa = PBXGroup;
 			children = (
+				E579D4BC26C6A7EC00640453 /* HXHomeViewController.h */,
+				E579D4BD26C6A7EC00640453 /* HXHomeViewController.m */,
 				E5ADB00326C5A8F200D3BD6E /* YSCDefender */,
 				E5ADAFFF26C5507A00D3BD6E /* KVO */,
 				E5ADAFF526C51BF800D3BD6E /* KVC */,
@@ -549,11 +622,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				E5ADAA3026C3FC0E00D3BD6E /* ViewController.m in Sources */,
-				E5ADB01626C5AB0B00D3BD6E /* BaseViewController.m in Sources */,
+				E5ADB01626C5AB0B00D3BD6E /* BaseCrashViewController.m in Sources */,
+				E579D4C226C6A93A00640453 /* PBNavigationController.m in Sources */,
 				E5ADB00F26C5A8F200D3BD6E /* NSObject+KVODefender.m in Sources */,
+				E579D4D626C6FC9200640453 /* PBViewController.m in Sources */,
 				E5ADAFF826C54DA200D3BD6E /* KVCViewController.m in Sources */,
 				E5ADAACA26C4521500D3BD6E /* NSAttributedString+Safety.m in Sources */,
 				E5ADAA4F26C4307D00D3BD6E /* SceneDelegate.m in Sources */,
+				E579D4CF26C6A9A300640453 /* PBNotiConst.m in Sources */,
 				E5ADB02826C5AF7D00D3BD6E /* TestKVCCrashVC.m in Sources */,
 				E5ADAAC726C4521500D3BD6E /* NSArray+Safety.m in Sources */,
 				E5ADAAC826C4521500D3BD6E /* NSString+Safety.m in Sources */,
@@ -564,6 +640,7 @@
 				E5ADAFFB26C54DC000D3BD6E /* KVCPerson.m in Sources */,
 				E5ADB00D26C5A8F200D3BD6E /* NSObject+SelectorDefender.m in Sources */,
 				E5ADAFE926C500C900D3BD6E /* HXNotificationViewController.m in Sources */,
+				E579D4D026C6A9A300640453 /* PBURLConst.m in Sources */,
 				E5ADB00E26C5A8F200D3BD6E /* NSObject+MethodSwizzling.m in Sources */,
 				E5ADAA5126C4307D00D3BD6E /* AppDelegate.m in Sources */,
 				E5ADAA3B26C3FC1000D3BD6E /* main.m in Sources */,
@@ -573,6 +650,7 @@
 				E5ADB00C26C5A8F200D3BD6E /* NSObject+KVCDefender.m in Sources */,
 				E5ADAA5026C4307D00D3BD6E /* AppDelegate+AppService.m in Sources */,
 				E5ADB02726C5AF7D00D3BD6E /* KVCCrashObject.m in Sources */,
+				E579D4BE26C6A7EC00640453 /* HXHomeViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -718,7 +796,9 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = CYW8A2Q36F;
-				INFOPLIST_FILE = HXProject/Info.plist;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/Supporting Files/PrefixHeader.pch";
+				INFOPLIST_FILE = "Supporting Files/Info.plist";
+				INSTALL_PATH = "$(LOCAL_APPS_DIR)";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -737,7 +817,9 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = CYW8A2Q36F;
-				INFOPLIST_FILE = HXProject/Info.plist;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/Supporting Files/PrefixHeader.pch";
+				INFOPLIST_FILE = "Supporting Files/Info.plist";
+				INSTALL_PATH = "$(LOCAL_APPS_DIR)";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

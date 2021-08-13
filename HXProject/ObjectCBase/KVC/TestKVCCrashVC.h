@@ -7,9 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "BaseViewController.h"
+#import "BaseCrashViewController.h"
 
-@interface TestKVCCrashVC : BaseViewController
+@interface TestKVCCrashVC : BaseCrashViewController
 
 @end
 

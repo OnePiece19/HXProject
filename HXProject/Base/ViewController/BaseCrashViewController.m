@@ -6,9 +6,9 @@
 //  Copyright © 2019 bujige. All rights reserved.
 //
 
-#import "BaseViewController.h"
+#import "BaseCrashViewController.h"
 
-@interface BaseViewController ()
+@interface BaseCrashViewController ()
 
 /* <#注释#> */
 @property (nonatomic, strong) UIButton *backButton;
@@ -17,7 +17,7 @@
 @property (nonatomic, strong) UITextView *logTextView;
 @end
 
-@implementation BaseViewController
+@implementation BaseCrashViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];

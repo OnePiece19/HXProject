@@ -33,6 +33,8 @@ end
 
 #☆☆☆☆☆ 三方库 ☆☆☆☆☆
 def vendors_pods
+  
+  pod 'YYCategories'
 end
 
 #☆☆☆☆☆ 调试工具 ☆☆☆☆☆

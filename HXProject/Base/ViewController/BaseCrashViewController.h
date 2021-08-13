@@ -1,5 +1,5 @@
 //
-//  BaseViewController.h
+//  BaseCrashViewController.h
 //  YSC-Avoid-Crash
 //
 //  Created by WalkingBoy on 2019/9/4.
@@ -11,7 +11,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface BaseViewController : UIViewController
+@interface BaseCrashViewController : UIViewController
 
 - (void)redirectSTD:(int)fd;
 
