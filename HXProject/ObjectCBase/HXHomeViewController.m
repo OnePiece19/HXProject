@@ -106,20 +106,12 @@
     if (!_dataSource) {
         _dataSource = @[
                         @{
-                            @"title" : @"Unrecognized Selector Crash",
-                            @"class" : @"TestUnrecognizedSelVC"
-                            },
-                        @{
-                            @"title" : @"KVO Crash",
+                            @"title" : @"KVO",
                             @"class" : @"TestKVOCrashVC"
                             },
                         @{
-                            @"title" : @"KVC Crash",
+                            @"title" : @"KVC",
                             @"class" : @"TestKVCCrashVC"
-                            },
-                        @{
-                            @"title" : @"Notification Crash",
-                            @"class" : @"TestNotificationCrashVC"
                             }
                         ];
     }
