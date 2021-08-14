@@ -47,6 +47,17 @@
 }
 
 
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    NSDictionary *item =  _dataSource[indexPath.row];
+    Class cls = NSClassFromString([item objectForKey:@"class"]);
+    
+    [self presentViewController:[[cls alloc] init] animated:YES completion:nil];
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+    return 44;
+}
+
 /*
 // Override to support conditional editing of the table view.
 - (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
