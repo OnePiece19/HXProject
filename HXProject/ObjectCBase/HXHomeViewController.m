@@ -111,7 +111,7 @@
                             },
                         @{
                             @"title" : @"KVC",
-                            @"class" : @"TestKVCCrashVC"
+                            @"class" : @"KVOViewController"
                             }
                         ];
     }
