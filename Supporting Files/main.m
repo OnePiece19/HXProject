@@ -8,6 +8,8 @@
 #import <UIKit/UIKit.h>
 #import "AppDelegate.h"
 
+extern void _objc_autoreleasePoolPrint(void);
+
 int main(int argc, char * argv[]) {
     NSString * appDelegateClassName;
     @autoreleasepool {

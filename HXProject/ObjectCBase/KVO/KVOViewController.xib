@@ -18,36 +18,63 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CaQ-cB-tNJ">
-                    <rect key="frame" x="149" y="174" width="116" height="30"/>
+                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CaQ-cB-tNJ">
+                    <rect key="frame" x="149" y="100" width="116" height="30"/>
                     <color key="backgroundColor" systemColor="systemGray2Color"/>
                     <state key="normal" title="测试kvo监听属性"/>
                     <connections>
                         <action selector="didClickChangeProperty:" destination="-1" eventType="touchUpInside" id="hPh-N0-IHP"/>
                     </connections>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gS0-Qq-67L">
-                    <rect key="frame" x="149" y="237" width="116" height="30"/>
+                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gS0-Qq-67L">
+                    <rect key="frame" x="149" y="163" width="116" height="30"/>
                     <color key="backgroundColor" systemColor="systemGray2Color"/>
                     <state key="normal" title="测试kvo监听集合"/>
                     <connections>
                         <action selector="didClickChangeSet:" destination="-1" eventType="touchUpInside" id="124-DZ-uza"/>
                     </connections>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="esO-3E-lFA">
-                    <rect key="frame" x="98.5" y="300" width="217" height="30"/>
+                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="esO-3E-lFA">
+                    <rect key="frame" x="98.5" y="226" width="217" height="30"/>
                     <color key="backgroundColor" systemColor="systemGray2Color"/>
                     <state key="normal" title="测试kvo监听私有变量，kvc触发"/>
                     <connections>
                         <action selector="didClickChangePrivateVar:" destination="-1" eventType="touchUpInside" id="052-u3-iDi"/>
                     </connections>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GXH-FE-dAK">
-                    <rect key="frame" x="98.5" y="363" width="217" height="30"/>
+                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GXH-FE-dAK">
+                    <rect key="frame" x="98.5" y="289" width="217" height="30"/>
                     <color key="backgroundColor" systemColor="systemGray2Color"/>
                     <state key="normal" title="测试kvo监听私有属性，kvc触发"/>
                     <connections>
                         <action selector="didClickChangePrivateProperty:" destination="-1" eventType="touchUpInside" id="bsz-pL-jhg"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x9E-wR-lCE">
+                    <rect key="frame" x="176" y="457" width="62" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" systemColor="systemGreenColor"/>
+                    <state key="normal" title="手动触发"/>
+                    <connections>
+                        <action selector="didClickChangeAge:" destination="-1" eventType="touchUpInside" id="cL8-aM-xBW"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PHL-bc-cGn">
+                    <rect key="frame" x="149" y="521" width="116" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" systemColor="systemGreenColor"/>
+                    <state key="normal" title="kvo自动触发控制"/>
+                    <connections>
+                        <action selector="didClickTestAutoControl:" destination="-1" eventType="touchUpInside" id="7i8-Ld-6An"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x9l-Yq-rLS">
+                    <rect key="frame" x="120.5" y="571" width="173" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" systemColor="systemGreenColor"/>
+                    <state key="normal" title="KVO 新旧值相等时不触发"/>
+                    <connections>
+                        <action selector="didClickTestSameValue:" destination="-1" eventType="touchUpInside" id="unB-xb-yqe"/>
                     </connections>
                 </button>
             </subviews>
@@ -72,6 +99,9 @@
         </systemColor>
         <systemColor name="systemGray2Color">
             <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

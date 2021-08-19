@@ -40,6 +40,12 @@
     [self.person addObserver:self forKeyPath:@"privateVar" options:(NSKeyValueObservingOptionNew| NSKeyValueObservingOptionOld) context:NULL];
     
     [self.person addObserver:self forKeyPath:@"privateProperty" options:(NSKeyValueObservingOptionNew| NSKeyValueObservingOptionOld) context:NULL];
+    
+    [self.person addObserver:self forKeyPath:@"age" options:(NSKeyValueObservingOptionNew| NSKeyValueObservingOptionOld) context:NULL];
+    // 如果想在注册观察者后，立即接收一次回调
+//    [self.person addObserver:self forKeyPath:@"sex" options:NSKeyValueObservingOptionInitial context:NULL];
+    
+    [self.person addObserver:self forKeyPath:@"address" options:(NSKeyValueObservingOptionNew| NSKeyValueObservingOptionOld) context:NULL];
 
 }
 
@@ -112,6 +118,24 @@
     
     [self.person setValue:@"王五" forKey:@"privateProperty"];
     NSLog(@"%@",[self.person valueForKey:@"privateProperty"]);
+}
+
+- (IBAction)didClickChangeAge:(UIButton *)sender {
+    [self.person willChangeValueForKey:@"age"];
+    self.person->age = 18;
+    NSLog(@"%@",[self.person valueForKey:@"age"]);
+    [self.person didChangeValueForKey:@"age"];
+}
+
+
+- (IBAction)didClickTestAutoControl:(UIButton *)sender {
+    self.person.sex = @"女";
+    NSLog(@"%@",self.person.sex);
+}
+
+- (IBAction)didClickTestSameValue:(UIButton *)sender {
+    self.person.address = @"后厂村";
+    self.person.address = @"后厂村";
 }
 
 @end

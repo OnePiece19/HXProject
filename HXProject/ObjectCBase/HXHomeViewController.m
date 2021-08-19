@@ -106,13 +106,27 @@
     if (!_dataSource) {
         _dataSource = @[
                         @{
+                            @"title" : @"KVC",
+                            @"class" : @"KVCViewController"
+                            },
+                        @{
+                            @"title" : @"KVC crash test",
+                            @"class" : @"TestKVCCrashVC"
+                            },
+                        @{
                             @"title" : @"KVO",
+                            @"class" : @"KVOViewController"
+                            },
+                        @{
+                            @"title" : @"KVO crash test",
                             @"class" : @"TestKVOCrashVC"
                             },
                         @{
-                            @"title" : @"KVC",
-                            @"class" : @"KVOViewController"
+                            @"title" : @"Auto release test",
+                            @"class" : @"AutoReleaseViewController"
                             }
+                        
+                        
                         ];
     }
     return _dataSource;

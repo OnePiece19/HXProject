@@ -16,6 +16,8 @@
 		E5880D9F26C807D00067376C /* KVOViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E5880D9D26C807D00067376C /* KVOViewController.m */; };
 		E5880DA026C807D00067376C /* KVOViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E5880D9E26C807D00067376C /* KVOViewController.xib */; };
 		E5880DA326C808270067376C /* KVOPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = E5880DA226C808270067376C /* KVOPerson.m */; };
+		E5880DA826C976A20067376C /* KVOCrashObject.m in Sources */ = {isa = PBXBuildFile; fileRef = E5880DA526C976A20067376C /* KVOCrashObject.m */; };
+		E5880DA926C976A20067376C /* TestKVOCrashVC.m in Sources */ = {isa = PBXBuildFile; fileRef = E5880DA426C976A20067376C /* TestKVOCrashVC.m */; };
 		E5ADAA3026C3FC0E00D3BD6E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E5ADAA2F26C3FC0E00D3BD6E /* ViewController.m */; };
 		E5ADAA3326C3FC0E00D3BD6E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E5ADAA3126C3FC0E00D3BD6E /* Main.storyboard */; };
 		E5ADAA3526C3FC1000D3BD6E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E5ADAA3426C3FC1000D3BD6E /* Assets.xcassets */; };
@@ -44,6 +46,9 @@
 		E5ADB01626C5AB0B00D3BD6E /* BaseCrashViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E5ADB01526C5AB0B00D3BD6E /* BaseCrashViewController.m */; };
 		E5ADB02726C5AF7D00D3BD6E /* KVCCrashObject.m in Sources */ = {isa = PBXBuildFile; fileRef = E5ADB02626C5AF7D00D3BD6E /* KVCCrashObject.m */; };
 		E5ADB02826C5AF7D00D3BD6E /* TestKVCCrashVC.m in Sources */ = {isa = PBXBuildFile; fileRef = E5ADB02426C5AF7C00D3BD6E /* TestKVCCrashVC.m */; };
+		E5BE205126CD1227004A5CAC /* AutoReleaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E5BE204F26CD1227004A5CAC /* AutoReleaseViewController.m */; };
+		E5BE205226CD1227004A5CAC /* AutoReleaseViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E5BE205026CD1227004A5CAC /* AutoReleaseViewController.xib */; };
+		E5BE205526CD1278004A5CAC /* AutoReleaseObject.m in Sources */ = {isa = PBXBuildFile; fileRef = E5BE205426CD1278004A5CAC /* AutoReleaseObject.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -75,6 +80,10 @@
 		E5880D9E26C807D00067376C /* KVOViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = KVOViewController.xib; sourceTree = "<group>"; };
 		E5880DA126C808270067376C /* KVOPerson.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KVOPerson.h; sourceTree = "<group>"; };
 		E5880DA226C808270067376C /* KVOPerson.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KVOPerson.m; sourceTree = "<group>"; };
+		E5880DA426C976A20067376C /* TestKVOCrashVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestKVOCrashVC.m; sourceTree = "<group>"; };
+		E5880DA526C976A20067376C /* KVOCrashObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KVOCrashObject.m; sourceTree = "<group>"; };
+		E5880DA626C976A20067376C /* KVOCrashObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KVOCrashObject.h; sourceTree = "<group>"; };
+		E5880DA726C976A20067376C /* TestKVOCrashVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestKVOCrashVC.h; sourceTree = "<group>"; };
 		E5ADAA2526C3FC0E00D3BD6E /* HXProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HXProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5ADAA2E26C3FC0E00D3BD6E /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		E5ADAA2F26C3FC0E00D3BD6E /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
@@ -171,6 +180,11 @@
 		E5ADB02426C5AF7C00D3BD6E /* TestKVCCrashVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestKVCCrashVC.m; sourceTree = "<group>"; };
 		E5ADB02526C5AF7C00D3BD6E /* TestKVCCrashVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestKVCCrashVC.h; sourceTree = "<group>"; };
 		E5ADB02626C5AF7D00D3BD6E /* KVCCrashObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KVCCrashObject.m; sourceTree = "<group>"; };
+		E5BE204E26CD1227004A5CAC /* AutoReleaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AutoReleaseViewController.h; sourceTree = "<group>"; };
+		E5BE204F26CD1227004A5CAC /* AutoReleaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AutoReleaseViewController.m; sourceTree = "<group>"; };
+		E5BE205026CD1227004A5CAC /* AutoReleaseViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AutoReleaseViewController.xib; sourceTree = "<group>"; };
+		E5BE205326CD1278004A5CAC /* AutoReleaseObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AutoReleaseObject.h; sourceTree = "<group>"; };
+		E5BE205426CD1278004A5CAC /* AutoReleaseObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AutoReleaseObject.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -266,6 +280,24 @@
 				E579D4D526C6FC9200640453 /* PBViewController.m */,
 			);
 			path = ViewController;
+			sourceTree = "<group>";
+		};
+		E5880DAA26C977980067376C /* KVOCrash */ = {
+			isa = PBXGroup;
+			children = (
+				E5880DA726C976A20067376C /* TestKVOCrashVC.h */,
+				E5880DA426C976A20067376C /* TestKVOCrashVC.m */,
+				E5880DA626C976A20067376C /* KVOCrashObject.h */,
+				E5880DA526C976A20067376C /* KVOCrashObject.m */,
+			);
+			path = KVOCrash;
+			sourceTree = "<group>";
+		};
+		E5A1601726CE9F9300B24227 /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "New Group";
 			sourceTree = "<group>";
 		};
 		E5ADAA1C26C3FC0E00D3BD6E = {
@@ -490,8 +522,10 @@
 		E5ADAFF426C517B300D3BD6E /* ObjectCBase */ = {
 			isa = PBXGroup;
 			children = (
+				E5A1601726CE9F9300B24227 /* New Group */,
 				E579D4BC26C6A7EC00640453 /* HXHomeViewController.h */,
 				E579D4BD26C6A7EC00640453 /* HXHomeViewController.m */,
+				E5BE204D26CD11C7004A5CAC /* AutoReleasePool */,
 				E5ADB00326C5A8F200D3BD6E /* YSCDefender */,
 				E5ADAFFF26C5507A00D3BD6E /* KVO */,
 				E5ADAFF526C51BF800D3BD6E /* KVC */,
@@ -515,6 +549,7 @@
 		E5ADAFFF26C5507A00D3BD6E /* KVO */ = {
 			isa = PBXGroup;
 			children = (
+				E5880DAA26C977980067376C /* KVOCrash */,
 				E5880D9C26C807D00067376C /* KVOViewController.h */,
 				E5880D9D26C807D00067376C /* KVOViewController.m */,
 				E5880D9E26C807D00067376C /* KVOViewController.xib */,
@@ -537,6 +572,18 @@
 				E5ADB00826C5A8F200D3BD6E /* NSObject+KVCDefender.m */,
 			);
 			path = YSCDefender;
+			sourceTree = "<group>";
+		};
+		E5BE204D26CD11C7004A5CAC /* AutoReleasePool */ = {
+			isa = PBXGroup;
+			children = (
+				E5BE204E26CD1227004A5CAC /* AutoReleaseViewController.h */,
+				E5BE204F26CD1227004A5CAC /* AutoReleaseViewController.m */,
+				E5BE205026CD1227004A5CAC /* AutoReleaseViewController.xib */,
+				E5BE205326CD1278004A5CAC /* AutoReleaseObject.h */,
+				E5BE205426CD1278004A5CAC /* AutoReleaseObject.m */,
+			);
+			path = AutoReleasePool;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -596,6 +643,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E5BE205226CD1227004A5CAC /* AutoReleaseViewController.xib in Resources */,
 				E5ADAA3826C3FC1000D3BD6E /* LaunchScreen.storyboard in Resources */,
 				E5880DA026C807D00067376C /* KVOViewController.xib in Resources */,
 				E5ADAA3526C3FC1000D3BD6E /* Assets.xcassets in Resources */,
@@ -636,6 +684,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E5ADAA3026C3FC0E00D3BD6E /* ViewController.m in Sources */,
+				E5BE205126CD1227004A5CAC /* AutoReleaseViewController.m in Sources */,
 				E5ADB01626C5AB0B00D3BD6E /* BaseCrashViewController.m in Sources */,
 				E5880D9F26C807D00067376C /* KVOViewController.m in Sources */,
 				E579D4C226C6A93A00640453 /* PBNavigationController.m in Sources */,
@@ -649,6 +698,7 @@
 				E5ADAAC726C4521500D3BD6E /* NSArray+Safety.m in Sources */,
 				E5ADAAC826C4521500D3BD6E /* NSString+Safety.m in Sources */,
 				E5880DA326C808270067376C /* KVOPerson.m in Sources */,
+				E5BE205526CD1278004A5CAC /* AutoReleaseObject.m in Sources */,
 				E5ADAFF026C505BB00D3BD6E /* HXObserverInfo.m in Sources */,
 				E5ADAFF326C516D800D3BD6E /* CustomNotificationCenterViewController.m in Sources */,
 				E5ADAA5626C430CE00D3BD6E /* HXTabBarController.m in Sources */,
@@ -664,7 +714,9 @@
 				E5ADAFFE26C54DF000D3BD6E /* KVCAddress.m in Sources */,
 				E5ADAAC926C4521500D3BD6E /* NSDictionary+Safety.m in Sources */,
 				E5ADB00C26C5A8F200D3BD6E /* NSObject+KVCDefender.m in Sources */,
+				E5880DA926C976A20067376C /* TestKVOCrashVC.m in Sources */,
 				E5ADAA5026C4307D00D3BD6E /* AppDelegate+AppService.m in Sources */,
+				E5880DA826C976A20067376C /* KVOCrashObject.m in Sources */,
 				E5ADB02726C5AF7D00D3BD6E /* KVCCrashObject.m in Sources */,
 				E579D4BE26C6A7EC00640453 /* HXHomeViewController.m in Sources */,
 			);
@@ -812,6 +864,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = CYW8A2Q36F;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/Supporting Files/PrefixHeader.pch";
 				INFOPLIST_FILE = "Supporting Files/Info.plist";
 				INSTALL_PATH = "$(LOCAL_APPS_DIR)";
@@ -819,8 +872,10 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = com.learn.HXProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -833,6 +888,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = CYW8A2Q36F;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/Supporting Files/PrefixHeader.pch";
 				INFOPLIST_FILE = "Supporting Files/Info.plist";
 				INSTALL_PATH = "$(LOCAL_APPS_DIR)";
@@ -840,8 +896,10 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = com.learn.HXProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
