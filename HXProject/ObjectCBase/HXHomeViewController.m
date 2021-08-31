@@ -15,6 +15,12 @@
 
 @implementation HXHomeViewController
 
+#define HTLog(_var) \
+{ \
+    NSString *name = @#_var; \
+    NSLog(@"%@: %p, %@,", name, _var, [_var class]); \
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];
@@ -23,6 +29,27 @@
     
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    
+//    NSString *a = @"a";
+//    NSMutableString *b = [a mutableCopy];
+//    NSString *c = [a copy];
+//    NSString *d = [[a mutableCopy] copy];
+//    NSString *e = [NSString stringWithString:a];
+//    NSString *f = [NSString stringWithFormat:@"f"];
+//    NSString *string1 = [NSString stringWithFormat:@"abcdefg"];
+//    NSString *string2 = [NSString stringWithFormat:@"abcdefghi"];
+//    NSString *string3 = [NSString stringWithFormat:@"abcdefghij"];
+//    HTLog(a);
+//    HTLog(b);
+//    HTLog(c);
+//    HTLog(d);
+//    HTLog(e);
+//    HTLog(f);
+//    HTLog(string1);
+//    HTLog(string2);
+//    HTLog(string3);
+//
+//    NSLog(@"%d",[string1 isKindOfClass:[NSString class]]);
 }
 
 #pragma mark - Table view data source

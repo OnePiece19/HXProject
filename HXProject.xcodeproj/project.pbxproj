@@ -13,6 +13,15 @@
 		E579D4CF26C6A9A300640453 /* PBNotiConst.m in Sources */ = {isa = PBXBuildFile; fileRef = E579D4C626C6A9A300640453 /* PBNotiConst.m */; };
 		E579D4D026C6A9A300640453 /* PBURLConst.m in Sources */ = {isa = PBXBuildFile; fileRef = E579D4CB26C6A9A300640453 /* PBURLConst.m */; };
 		E579D4D626C6FC9200640453 /* PBViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E579D4D526C6FC9200640453 /* PBViewController.m */; };
+		E584E35826D6384200A55DFE /* HXUIHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E584E35726D6384200A55DFE /* HXUIHomeViewController.m */; };
+		E584E36026D63B3600A55DFE /* HXEventTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E584E35E26D63B3600A55DFE /* HXEventTestViewController.m */; };
+		E584E36126D63B3600A55DFE /* HXEventTestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E584E35F26D63B3600A55DFE /* HXEventTestViewController.xib */; };
+		E584E36426D640EB00A55DFE /* B_View.m in Sources */ = {isa = PBXBuildFile; fileRef = E584E36326D640EB00A55DFE /* B_View.m */; };
+		E584E36726D640F900A55DFE /* C_View.m in Sources */ = {isa = PBXBuildFile; fileRef = E584E36626D640F900A55DFE /* C_View.m */; };
+		E584E36A26D6410400A55DFE /* D_View.m in Sources */ = {isa = PBXBuildFile; fileRef = E584E36926D6410400A55DFE /* D_View.m */; };
+		E584E36D26D6410E00A55DFE /* E_View.m in Sources */ = {isa = PBXBuildFile; fileRef = E584E36C26D6410E00A55DFE /* E_View.m */; };
+		E584E37026D6411800A55DFE /* F_View.m in Sources */ = {isa = PBXBuildFile; fileRef = E584E36F26D6411800A55DFE /* F_View.m */; };
+		E584E37326D645E000A55DFE /* A_View.m in Sources */ = {isa = PBXBuildFile; fileRef = E584E37226D645E000A55DFE /* A_View.m */; };
 		E5880D9F26C807D00067376C /* KVOViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E5880D9D26C807D00067376C /* KVOViewController.m */; };
 		E5880DA026C807D00067376C /* KVOViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E5880D9E26C807D00067376C /* KVOViewController.xib */; };
 		E5880DA326C808270067376C /* KVOPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = E5880DA226C808270067376C /* KVOPerson.m */; };
@@ -46,7 +55,7 @@
 		E5ADB01626C5AB0B00D3BD6E /* BaseCrashViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E5ADB01526C5AB0B00D3BD6E /* BaseCrashViewController.m */; };
 		E5ADB02726C5AF7D00D3BD6E /* KVCCrashObject.m in Sources */ = {isa = PBXBuildFile; fileRef = E5ADB02626C5AF7D00D3BD6E /* KVCCrashObject.m */; };
 		E5ADB02826C5AF7D00D3BD6E /* TestKVCCrashVC.m in Sources */ = {isa = PBXBuildFile; fileRef = E5ADB02426C5AF7C00D3BD6E /* TestKVCCrashVC.m */; };
-		E5BE205126CD1227004A5CAC /* AutoReleaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E5BE204F26CD1227004A5CAC /* AutoReleaseViewController.m */; };
+		E5BE205126CD1227004A5CAC /* AutoReleaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E5BE204F26CD1227004A5CAC /* AutoReleaseViewController.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		E5BE205226CD1227004A5CAC /* AutoReleaseViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E5BE205026CD1227004A5CAC /* AutoReleaseViewController.xib */; };
 		E5BE205526CD1278004A5CAC /* AutoReleaseObject.m in Sources */ = {isa = PBXBuildFile; fileRef = E5BE205426CD1278004A5CAC /* AutoReleaseObject.m */; };
 /* End PBXBuildFile section */
@@ -75,6 +84,23 @@
 		E579D4D226C6AAE200640453 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		E579D4D426C6FC9200640453 /* PBViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PBViewController.h; sourceTree = "<group>"; };
 		E579D4D526C6FC9200640453 /* PBViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PBViewController.m; sourceTree = "<group>"; };
+		E584E35626D6384200A55DFE /* HXUIHomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HXUIHomeViewController.h; sourceTree = "<group>"; };
+		E584E35726D6384200A55DFE /* HXUIHomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HXUIHomeViewController.m; sourceTree = "<group>"; };
+		E584E35D26D63B3600A55DFE /* HXEventTestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HXEventTestViewController.h; sourceTree = "<group>"; };
+		E584E35E26D63B3600A55DFE /* HXEventTestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HXEventTestViewController.m; sourceTree = "<group>"; };
+		E584E35F26D63B3600A55DFE /* HXEventTestViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HXEventTestViewController.xib; sourceTree = "<group>"; };
+		E584E36226D640EB00A55DFE /* B_View.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = B_View.h; sourceTree = "<group>"; };
+		E584E36326D640EB00A55DFE /* B_View.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = B_View.m; sourceTree = "<group>"; };
+		E584E36526D640F900A55DFE /* C_View.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = C_View.h; sourceTree = "<group>"; };
+		E584E36626D640F900A55DFE /* C_View.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = C_View.m; sourceTree = "<group>"; };
+		E584E36826D6410400A55DFE /* D_View.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = D_View.h; sourceTree = "<group>"; };
+		E584E36926D6410400A55DFE /* D_View.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = D_View.m; sourceTree = "<group>"; };
+		E584E36B26D6410E00A55DFE /* E_View.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = E_View.h; sourceTree = "<group>"; };
+		E584E36C26D6410E00A55DFE /* E_View.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = E_View.m; sourceTree = "<group>"; };
+		E584E36E26D6411800A55DFE /* F_View.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = F_View.h; sourceTree = "<group>"; };
+		E584E36F26D6411800A55DFE /* F_View.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = F_View.m; sourceTree = "<group>"; };
+		E584E37126D645E000A55DFE /* A_View.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = A_View.h; sourceTree = "<group>"; };
+		E584E37226D645E000A55DFE /* A_View.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = A_View.m; sourceTree = "<group>"; };
 		E5880D9C26C807D00067376C /* KVOViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KVOViewController.h; sourceTree = "<group>"; };
 		E5880D9D26C807D00067376C /* KVOViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KVOViewController.m; sourceTree = "<group>"; };
 		E5880D9E26C807D00067376C /* KVOViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = KVOViewController.xib; sourceTree = "<group>"; };
@@ -282,6 +308,38 @@
 			path = ViewController;
 			sourceTree = "<group>";
 		};
+		E584E35526D6365D00A55DFE /* UITest */ = {
+			isa = PBXGroup;
+			children = (
+				E584E35926D638AE00A55DFE /* Event */,
+				E584E35626D6384200A55DFE /* HXUIHomeViewController.h */,
+				E584E35726D6384200A55DFE /* HXUIHomeViewController.m */,
+			);
+			path = UITest;
+			sourceTree = "<group>";
+		};
+		E584E35926D638AE00A55DFE /* Event */ = {
+			isa = PBXGroup;
+			children = (
+				E584E35D26D63B3600A55DFE /* HXEventTestViewController.h */,
+				E584E35E26D63B3600A55DFE /* HXEventTestViewController.m */,
+				E584E35F26D63B3600A55DFE /* HXEventTestViewController.xib */,
+				E584E37126D645E000A55DFE /* A_View.h */,
+				E584E37226D645E000A55DFE /* A_View.m */,
+				E584E36226D640EB00A55DFE /* B_View.h */,
+				E584E36326D640EB00A55DFE /* B_View.m */,
+				E584E36526D640F900A55DFE /* C_View.h */,
+				E584E36626D640F900A55DFE /* C_View.m */,
+				E584E36826D6410400A55DFE /* D_View.h */,
+				E584E36926D6410400A55DFE /* D_View.m */,
+				E584E36B26D6410E00A55DFE /* E_View.h */,
+				E584E36C26D6410E00A55DFE /* E_View.m */,
+				E584E36E26D6411800A55DFE /* F_View.h */,
+				E584E36F26D6411800A55DFE /* F_View.m */,
+			);
+			path = Event;
+			sourceTree = "<group>";
+		};
 		E5880DAA26C977980067376C /* KVOCrash */ = {
 			isa = PBXGroup;
 			children = (
@@ -322,6 +380,7 @@
 		E5ADAA2726C3FC0E00D3BD6E /* HXProject */ = {
 			isa = PBXGroup;
 			children = (
+				E584E35526D6365D00A55DFE /* UITest */,
 				E579D4C326C6A9A300640453 /* Define */,
 				E5ADAFF426C517B300D3BD6E /* ObjectCBase */,
 				E5ADAABC26C4521500D3BD6E /* ZYBSwizzle */,
@@ -474,16 +533,16 @@
 		E5ADAABC26C4521500D3BD6E /* ZYBSwizzle */ = {
 			isa = PBXGroup;
 			children = (
-				E5ADAABD26C4521500D3BD6E /* NSArray+Safety.h */,
-				E5ADAABE26C4521500D3BD6E /* NSString+Safety.h */,
-				E5ADAABF26C4521500D3BD6E /* NBSafetyKit.h */,
-				E5ADAAC026C4521500D3BD6E /* NSDictionary+Safety.h */,
-				E5ADAAC126C4521500D3BD6E /* NSAttributedString+Safety.h */,
-				E5ADAAC226C4521500D3BD6E /* NSArray+Safety.m */,
-				E5ADAAC326C4521500D3BD6E /* NSString+Safety.m */,
 				E5ADAAC426C4521500D3BD6E /* NBSafetyCommon.h */,
-				E5ADAAC526C4521500D3BD6E /* NSDictionary+Safety.m */,
+				E5ADAABF26C4521500D3BD6E /* NBSafetyKit.h */,
+				E5ADAABD26C4521500D3BD6E /* NSArray+Safety.h */,
+				E5ADAAC226C4521500D3BD6E /* NSArray+Safety.m */,
+				E5ADAAC126C4521500D3BD6E /* NSAttributedString+Safety.h */,
 				E5ADAAC626C4521500D3BD6E /* NSAttributedString+Safety.m */,
+				E5ADAAC026C4521500D3BD6E /* NSDictionary+Safety.h */,
+				E5ADAAC526C4521500D3BD6E /* NSDictionary+Safety.m */,
+				E5ADAABE26C4521500D3BD6E /* NSString+Safety.h */,
+				E5ADAAC326C4521500D3BD6E /* NSString+Safety.m */,
 			);
 			path = ZYBSwizzle;
 			sourceTree = "<group>";
@@ -644,6 +703,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E5BE205226CD1227004A5CAC /* AutoReleaseViewController.xib in Resources */,
+				E584E36126D63B3600A55DFE /* HXEventTestViewController.xib in Resources */,
 				E5ADAA3826C3FC1000D3BD6E /* LaunchScreen.storyboard in Resources */,
 				E5880DA026C807D00067376C /* KVOViewController.xib in Resources */,
 				E5ADAA3526C3FC1000D3BD6E /* Assets.xcassets in Resources */,
@@ -685,6 +745,8 @@
 			files = (
 				E5ADAA3026C3FC0E00D3BD6E /* ViewController.m in Sources */,
 				E5BE205126CD1227004A5CAC /* AutoReleaseViewController.m in Sources */,
+				E584E37326D645E000A55DFE /* A_View.m in Sources */,
+				E584E36A26D6410400A55DFE /* D_View.m in Sources */,
 				E5ADB01626C5AB0B00D3BD6E /* BaseCrashViewController.m in Sources */,
 				E5880D9F26C807D00067376C /* KVOViewController.m in Sources */,
 				E579D4C226C6A93A00640453 /* PBNavigationController.m in Sources */,
@@ -696,6 +758,8 @@
 				E579D4CF26C6A9A300640453 /* PBNotiConst.m in Sources */,
 				E5ADB02826C5AF7D00D3BD6E /* TestKVCCrashVC.m in Sources */,
 				E5ADAAC726C4521500D3BD6E /* NSArray+Safety.m in Sources */,
+				E584E36D26D6410E00A55DFE /* E_View.m in Sources */,
+				E584E35826D6384200A55DFE /* HXUIHomeViewController.m in Sources */,
 				E5ADAAC826C4521500D3BD6E /* NSString+Safety.m in Sources */,
 				E5880DA326C808270067376C /* KVOPerson.m in Sources */,
 				E5BE205526CD1278004A5CAC /* AutoReleaseObject.m in Sources */,
@@ -705,7 +769,10 @@
 				E5ADAA4E26C4307D00D3BD6E /* SceneDelegate+UIService.m in Sources */,
 				E5ADAFFB26C54DC000D3BD6E /* KVCPerson.m in Sources */,
 				E5ADB00D26C5A8F200D3BD6E /* NSObject+SelectorDefender.m in Sources */,
+				E584E36426D640EB00A55DFE /* B_View.m in Sources */,
+				E584E36726D640F900A55DFE /* C_View.m in Sources */,
 				E5ADAFE926C500C900D3BD6E /* HXNotificationViewController.m in Sources */,
+				E584E37026D6411800A55DFE /* F_View.m in Sources */,
 				E579D4D026C6A9A300640453 /* PBURLConst.m in Sources */,
 				E5ADB00E26C5A8F200D3BD6E /* NSObject+MethodSwizzling.m in Sources */,
 				E5ADAA5126C4307D00D3BD6E /* AppDelegate.m in Sources */,
@@ -713,6 +780,7 @@
 				E5ADAFED26C5052800D3BD6E /* HXNotificationCenter.m in Sources */,
 				E5ADAFFE26C54DF000D3BD6E /* KVCAddress.m in Sources */,
 				E5ADAAC926C4521500D3BD6E /* NSDictionary+Safety.m in Sources */,
+				E584E36026D63B3600A55DFE /* HXEventTestViewController.m in Sources */,
 				E5ADB00C26C5A8F200D3BD6E /* NSObject+KVCDefender.m in Sources */,
 				E5880DA926C976A20067376C /* TestKVOCrashVC.m in Sources */,
 				E5ADAA5026C4307D00D3BD6E /* AppDelegate+AppService.m in Sources */,

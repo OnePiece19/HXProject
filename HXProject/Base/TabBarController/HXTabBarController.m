@@ -7,6 +7,7 @@
 
 #import "HXTabBarController.h"
 #import "HXHomeViewController.h"
+#import "HXUIHomeViewController.h"
 
 
 @interface HXTabBarController ()
@@ -37,6 +38,10 @@
     
     HXHomeViewController * homeVC = [[HXHomeViewController alloc] init];
     [self setupChildViewController:homeVC title:@"首页" imageName:@"tab_homeInfo" seleceImageName:@"tab_homeInfoLight"];
+    
+    
+    HXUIHomeViewController * UIHomeVC = [[HXUIHomeViewController alloc] init];
+    [self setupChildViewController:UIHomeVC title:@"UI" imageName:@"tab_homeInfo" seleceImageName:@"tab_homeInfoLight"];
     
     
 ////    NSString * userid = userManager.curUserInfo.user_id;
