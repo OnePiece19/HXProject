@@ -77,8 +77,9 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     NSDictionary *item =  _dataSource[indexPath.row];
     Class cls = NSClassFromString([item objectForKey:@"class"]);
-    
-    [self presentViewController:[[cls alloc] init] animated:YES completion:nil];
+    UIViewController * vc = (UIViewController *)[[cls alloc] init];
+    vc.modalPresentationStyle = UIModalPresentationFullScreen;
+    [self presentViewController:vc animated:YES completion:nil];
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -151,9 +152,15 @@
                         @{
                             @"title" : @"Auto release test",
                             @"class" : @"AutoReleaseViewController"
+                            },
+                        @{
+                            @"title" : @"Run Time",
+                            @"class" : @"HXRunTimeViewController"
+                            },
+                        @{
+                            @"title" : @"Crash 分析",
+                            @"class" : @"HXCrashViewController"
                             }
-                        
-                        
                         ];
     }
     return _dataSource;

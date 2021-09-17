@@ -35,6 +35,7 @@ end
 def vendors_pods
   
   pod 'YYCategories'
+  pod 'SCLAlertView-Objective-C'
 end
 
 #☆☆☆☆☆ 调试工具 ☆☆☆☆☆

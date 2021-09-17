@@ -8,6 +8,19 @@
 
 /* Begin PBXBuildFile section */
 		416B6C670124327831542B28 /* libPods-App-HXProject.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CDE3A508FE27A32CE176CF32 /* libPods-App-HXProject.a */; };
+		E538E52626E3ED74004DD25A /* OffScreenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E538E52526E3ED74004DD25A /* OffScreenViewController.m */; };
+		E538E52A26E63902004DD25A /* HXRunTimeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E538E52926E63902004DD25A /* HXRunTimeViewController.m */; };
+		E538E53E26E68518004DD25A /* ClickPopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E538E52E26E68517004DD25A /* ClickPopViewController.m */; };
+		E538E53F26E68518004DD25A /* ClickPushViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E538E53026E68517004DD25A /* ClickPushViewController.m */; };
+		E538E54026E68518004DD25A /* LifeCycleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E538E53226E68518004DD25A /* LifeCycleViewController.m */; };
+		E538E54126E68518004DD25A /* RegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E538E53426E68518004DD25A /* RegisterViewController.m */; };
+		E538E54226E68518004DD25A /* landback3.PNG in Resources */ = {isa = PBXBuildFile; fileRef = E538E53726E68518004DD25A /* landback3.PNG */; };
+		E538E54326E68518004DD25A /* TesTViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E538E53826E68518004DD25A /* TesTViewController.m */; };
+		E538E54426E68518004DD25A /* LandViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E538E53B26E68518004DD25A /* LandViewController.m */; };
+		E538E54526E68518004DD25A /* landback2.PNG in Resources */ = {isa = PBXBuildFile; fileRef = E538E53D26E68518004DD25A /* landback2.PNG */; };
+		E538E55D26EA4F93004DD25A /* HXCrashViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E538E55B26EA4F93004DD25A /* HXCrashViewController.m */; };
+		E538E55E26EA4F93004DD25A /* HXCrashViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E538E55C26EA4F93004DD25A /* HXCrashViewController.xib */; };
+		E538E56126EA526D004DD25A /* HXUncaughtExceptionHandle.m in Sources */ = {isa = PBXBuildFile; fileRef = E538E56026EA526D004DD25A /* HXUncaughtExceptionHandle.m */; };
 		E579D4BE26C6A7EC00640453 /* HXHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E579D4BD26C6A7EC00640453 /* HXHomeViewController.m */; };
 		E579D4C226C6A93A00640453 /* PBNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = E579D4C126C6A93A00640453 /* PBNavigationController.m */; };
 		E579D4CF26C6A9A300640453 /* PBNotiConst.m in Sources */ = {isa = PBXBuildFile; fileRef = E579D4C626C6A9A300640453 /* PBNotiConst.m */; };
@@ -66,6 +79,29 @@
 		AA05304A2881597236855BD5 /* Pods-HXProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HXProject.release.xcconfig"; path = "Target Support Files/Pods-HXProject/Pods-HXProject.release.xcconfig"; sourceTree = "<group>"; };
 		CDE3A508FE27A32CE176CF32 /* libPods-App-HXProject.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-App-HXProject.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD77296AB46F5EC680C51C2F /* Pods-App-HXProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-App-HXProject.release.xcconfig"; path = "Target Support Files/Pods-App-HXProject/Pods-App-HXProject.release.xcconfig"; sourceTree = "<group>"; };
+		E538E52426E3ED74004DD25A /* OffScreenViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OffScreenViewController.h; sourceTree = "<group>"; };
+		E538E52526E3ED74004DD25A /* OffScreenViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OffScreenViewController.m; sourceTree = "<group>"; };
+		E538E52826E63902004DD25A /* HXRunTimeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HXRunTimeViewController.h; sourceTree = "<group>"; };
+		E538E52926E63902004DD25A /* HXRunTimeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HXRunTimeViewController.m; sourceTree = "<group>"; };
+		E538E52B26E68517004DD25A /* TesTViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TesTViewController.h; sourceTree = "<group>"; };
+		E538E52D26E68517004DD25A /* ClickPushViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClickPushViewController.h; sourceTree = "<group>"; };
+		E538E52E26E68517004DD25A /* ClickPopViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClickPopViewController.m; sourceTree = "<group>"; };
+		E538E52F26E68517004DD25A /* ClickPopViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClickPopViewController.h; sourceTree = "<group>"; };
+		E538E53026E68517004DD25A /* ClickPushViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClickPushViewController.m; sourceTree = "<group>"; };
+		E538E53126E68518004DD25A /* LifeCycleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LifeCycleViewController.h; sourceTree = "<group>"; };
+		E538E53226E68518004DD25A /* LifeCycleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LifeCycleViewController.m; sourceTree = "<group>"; };
+		E538E53426E68518004DD25A /* RegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisterViewController.m; sourceTree = "<group>"; };
+		E538E53526E68518004DD25A /* RegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisterViewController.h; sourceTree = "<group>"; };
+		E538E53726E68518004DD25A /* landback3.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = landback3.PNG; sourceTree = "<group>"; };
+		E538E53826E68518004DD25A /* TesTViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TesTViewController.m; sourceTree = "<group>"; };
+		E538E53A26E68518004DD25A /* LandViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LandViewController.h; sourceTree = "<group>"; };
+		E538E53B26E68518004DD25A /* LandViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LandViewController.m; sourceTree = "<group>"; };
+		E538E53D26E68518004DD25A /* landback2.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = landback2.PNG; sourceTree = "<group>"; };
+		E538E55A26EA4F93004DD25A /* HXCrashViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HXCrashViewController.h; sourceTree = "<group>"; };
+		E538E55B26EA4F93004DD25A /* HXCrashViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HXCrashViewController.m; sourceTree = "<group>"; };
+		E538E55C26EA4F93004DD25A /* HXCrashViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HXCrashViewController.xib; sourceTree = "<group>"; };
+		E538E55F26EA526D004DD25A /* HXUncaughtExceptionHandle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HXUncaughtExceptionHandle.h; sourceTree = "<group>"; };
+		E538E56026EA526D004DD25A /* HXUncaughtExceptionHandle.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HXUncaughtExceptionHandle.m; sourceTree = "<group>"; };
 		E579D4BC26C6A7EC00640453 /* HXHomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HXHomeViewController.h; sourceTree = "<group>"; };
 		E579D4BD26C6A7EC00640453 /* HXHomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HXHomeViewController.m; sourceTree = "<group>"; };
 		E579D4C026C6A93A00640453 /* PBNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PBNavigationController.h; sourceTree = "<group>"; };
@@ -244,6 +280,97 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		E538E52226E3EC7D004DD25A /* 离屏渲染 */ = {
+			isa = PBXGroup;
+			children = (
+				E538E52426E3ED74004DD25A /* OffScreenViewController.h */,
+				E538E52526E3ED74004DD25A /* OffScreenViewController.m */,
+			);
+			path = "离屏渲染";
+			sourceTree = "<group>";
+		};
+		E538E52326E3ECA9004DD25A /* ViewController生命周期 */ = {
+			isa = PBXGroup;
+			children = (
+				E538E53926E68518004DD25A /* 登陆 */,
+				E538E53326E68518004DD25A /* 注册 */,
+				E538E52C26E68517004DD25A /* PushPop */,
+				E538E52B26E68517004DD25A /* TesTViewController.h */,
+				E538E53826E68518004DD25A /* TesTViewController.m */,
+				E538E53126E68518004DD25A /* LifeCycleViewController.h */,
+				E538E53226E68518004DD25A /* LifeCycleViewController.m */,
+			);
+			path = "ViewController生命周期";
+			sourceTree = "<group>";
+		};
+		E538E52726E638BA004DD25A /* RunTime */ = {
+			isa = PBXGroup;
+			children = (
+				E538E52826E63902004DD25A /* HXRunTimeViewController.h */,
+				E538E52926E63902004DD25A /* HXRunTimeViewController.m */,
+			);
+			path = RunTime;
+			sourceTree = "<group>";
+		};
+		E538E52C26E68517004DD25A /* PushPop */ = {
+			isa = PBXGroup;
+			children = (
+				E538E52F26E68517004DD25A /* ClickPopViewController.h */,
+				E538E52E26E68517004DD25A /* ClickPopViewController.m */,
+				E538E52D26E68517004DD25A /* ClickPushViewController.h */,
+				E538E53026E68517004DD25A /* ClickPushViewController.m */,
+			);
+			path = PushPop;
+			sourceTree = "<group>";
+		};
+		E538E53326E68518004DD25A /* 注册 */ = {
+			isa = PBXGroup;
+			children = (
+				E538E53426E68518004DD25A /* RegisterViewController.m */,
+				E538E53526E68518004DD25A /* RegisterViewController.h */,
+				E538E53626E68518004DD25A /* 图片 */,
+			);
+			path = "注册";
+			sourceTree = "<group>";
+		};
+		E538E53626E68518004DD25A /* 图片 */ = {
+			isa = PBXGroup;
+			children = (
+				E538E53726E68518004DD25A /* landback3.PNG */,
+			);
+			path = "图片";
+			sourceTree = "<group>";
+		};
+		E538E53926E68518004DD25A /* 登陆 */ = {
+			isa = PBXGroup;
+			children = (
+				E538E53A26E68518004DD25A /* LandViewController.h */,
+				E538E53B26E68518004DD25A /* LandViewController.m */,
+				E538E53C26E68518004DD25A /* 图片 */,
+			);
+			path = "登陆";
+			sourceTree = "<group>";
+		};
+		E538E53C26E68518004DD25A /* 图片 */ = {
+			isa = PBXGroup;
+			children = (
+				E538E53D26E68518004DD25A /* landback2.PNG */,
+			);
+			path = "图片";
+			sourceTree = "<group>";
+		};
+		E538E55926EA4F4E004DD25A /* Crash */ = {
+			isa = PBXGroup;
+			children = (
+				E538E55A26EA4F93004DD25A /* HXCrashViewController.h */,
+				E538E55B26EA4F93004DD25A /* HXCrashViewController.m */,
+				E538E55C26EA4F93004DD25A /* HXCrashViewController.xib */,
+				E538E55F26EA526D004DD25A /* HXUncaughtExceptionHandle.h */,
+				E538E56026EA526D004DD25A /* HXUncaughtExceptionHandle.m */,
+			);
+			path = Crash;
+			sourceTree = "<group>";
+		};
 		E579D4BB26C68C1A00640453 /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -308,17 +435,19 @@
 			path = ViewController;
 			sourceTree = "<group>";
 		};
-		E584E35526D6365D00A55DFE /* UITest */ = {
+		E584E35526D6365D00A55DFE /* UIKit */ = {
 			isa = PBXGroup;
 			children = (
-				E584E35926D638AE00A55DFE /* Event */,
+				E538E52326E3ECA9004DD25A /* ViewController生命周期 */,
+				E538E52226E3EC7D004DD25A /* 离屏渲染 */,
+				E584E35926D638AE00A55DFE /* 事件传递 */,
 				E584E35626D6384200A55DFE /* HXUIHomeViewController.h */,
 				E584E35726D6384200A55DFE /* HXUIHomeViewController.m */,
 			);
-			path = UITest;
+			path = UIKit;
 			sourceTree = "<group>";
 		};
-		E584E35926D638AE00A55DFE /* Event */ = {
+		E584E35926D638AE00A55DFE /* 事件传递 */ = {
 			isa = PBXGroup;
 			children = (
 				E584E35D26D63B3600A55DFE /* HXEventTestViewController.h */,
@@ -337,7 +466,7 @@
 				E584E36E26D6411800A55DFE /* F_View.h */,
 				E584E36F26D6411800A55DFE /* F_View.m */,
 			);
-			path = Event;
+			path = "事件传递";
 			sourceTree = "<group>";
 		};
 		E5880DAA26C977980067376C /* KVOCrash */ = {
@@ -380,9 +509,9 @@
 		E5ADAA2726C3FC0E00D3BD6E /* HXProject */ = {
 			isa = PBXGroup;
 			children = (
-				E584E35526D6365D00A55DFE /* UITest */,
-				E579D4C326C6A9A300640453 /* Define */,
 				E5ADAFF426C517B300D3BD6E /* ObjectCBase */,
+				E584E35526D6365D00A55DFE /* UIKit */,
+				E579D4C326C6A9A300640453 /* Define */,
 				E5ADAABC26C4521500D3BD6E /* ZYBSwizzle */,
 				E5ADAA4526C4305500D3BD6E /* AppDelegate */,
 				E5ADAA5226C430CD00D3BD6E /* Base */,
@@ -581,9 +710,11 @@
 		E5ADAFF426C517B300D3BD6E /* ObjectCBase */ = {
 			isa = PBXGroup;
 			children = (
-				E5A1601726CE9F9300B24227 /* New Group */,
 				E579D4BC26C6A7EC00640453 /* HXHomeViewController.h */,
 				E579D4BD26C6A7EC00640453 /* HXHomeViewController.m */,
+				E538E55926EA4F4E004DD25A /* Crash */,
+				E538E52726E638BA004DD25A /* RunTime */,
+				E5A1601726CE9F9300B24227 /* New Group */,
 				E5BE204D26CD11C7004A5CAC /* AutoReleasePool */,
 				E5ADB00326C5A8F200D3BD6E /* YSCDefender */,
 				E5ADAFFF26C5507A00D3BD6E /* KVO */,
@@ -702,7 +833,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E538E55E26EA4F93004DD25A /* HXCrashViewController.xib in Resources */,
 				E5BE205226CD1227004A5CAC /* AutoReleaseViewController.xib in Resources */,
+				E538E54226E68518004DD25A /* landback3.PNG in Resources */,
+				E538E54526E68518004DD25A /* landback2.PNG in Resources */,
 				E584E36126D63B3600A55DFE /* HXEventTestViewController.xib in Resources */,
 				E5ADAA3826C3FC1000D3BD6E /* LaunchScreen.storyboard in Resources */,
 				E5880DA026C807D00067376C /* KVOViewController.xib in Resources */,
@@ -754,25 +888,33 @@
 				E579D4D626C6FC9200640453 /* PBViewController.m in Sources */,
 				E5ADAFF826C54DA200D3BD6E /* KVCViewController.m in Sources */,
 				E5ADAACA26C4521500D3BD6E /* NSAttributedString+Safety.m in Sources */,
+				E538E52A26E63902004DD25A /* HXRunTimeViewController.m in Sources */,
 				E5ADAA4F26C4307D00D3BD6E /* SceneDelegate.m in Sources */,
+				E538E54426E68518004DD25A /* LandViewController.m in Sources */,
 				E579D4CF26C6A9A300640453 /* PBNotiConst.m in Sources */,
 				E5ADB02826C5AF7D00D3BD6E /* TestKVCCrashVC.m in Sources */,
+				E538E54126E68518004DD25A /* RegisterViewController.m in Sources */,
 				E5ADAAC726C4521500D3BD6E /* NSArray+Safety.m in Sources */,
 				E584E36D26D6410E00A55DFE /* E_View.m in Sources */,
 				E584E35826D6384200A55DFE /* HXUIHomeViewController.m in Sources */,
+				E538E56126EA526D004DD25A /* HXUncaughtExceptionHandle.m in Sources */,
 				E5ADAAC826C4521500D3BD6E /* NSString+Safety.m in Sources */,
 				E5880DA326C808270067376C /* KVOPerson.m in Sources */,
 				E5BE205526CD1278004A5CAC /* AutoReleaseObject.m in Sources */,
 				E5ADAFF026C505BB00D3BD6E /* HXObserverInfo.m in Sources */,
 				E5ADAFF326C516D800D3BD6E /* CustomNotificationCenterViewController.m in Sources */,
 				E5ADAA5626C430CE00D3BD6E /* HXTabBarController.m in Sources */,
+				E538E53E26E68518004DD25A /* ClickPopViewController.m in Sources */,
 				E5ADAA4E26C4307D00D3BD6E /* SceneDelegate+UIService.m in Sources */,
 				E5ADAFFB26C54DC000D3BD6E /* KVCPerson.m in Sources */,
 				E5ADB00D26C5A8F200D3BD6E /* NSObject+SelectorDefender.m in Sources */,
+				E538E54026E68518004DD25A /* LifeCycleViewController.m in Sources */,
 				E584E36426D640EB00A55DFE /* B_View.m in Sources */,
+				E538E52626E3ED74004DD25A /* OffScreenViewController.m in Sources */,
 				E584E36726D640F900A55DFE /* C_View.m in Sources */,
 				E5ADAFE926C500C900D3BD6E /* HXNotificationViewController.m in Sources */,
 				E584E37026D6411800A55DFE /* F_View.m in Sources */,
+				E538E54326E68518004DD25A /* TesTViewController.m in Sources */,
 				E579D4D026C6A9A300640453 /* PBURLConst.m in Sources */,
 				E5ADB00E26C5A8F200D3BD6E /* NSObject+MethodSwizzling.m in Sources */,
 				E5ADAA5126C4307D00D3BD6E /* AppDelegate.m in Sources */,
@@ -781,11 +923,13 @@
 				E5ADAFFE26C54DF000D3BD6E /* KVCAddress.m in Sources */,
 				E5ADAAC926C4521500D3BD6E /* NSDictionary+Safety.m in Sources */,
 				E584E36026D63B3600A55DFE /* HXEventTestViewController.m in Sources */,
+				E538E53F26E68518004DD25A /* ClickPushViewController.m in Sources */,
 				E5ADB00C26C5A8F200D3BD6E /* NSObject+KVCDefender.m in Sources */,
 				E5880DA926C976A20067376C /* TestKVOCrashVC.m in Sources */,
 				E5ADAA5026C4307D00D3BD6E /* AppDelegate+AppService.m in Sources */,
 				E5880DA826C976A20067376C /* KVOCrashObject.m in Sources */,
 				E5ADB02726C5AF7D00D3BD6E /* KVCCrashObject.m in Sources */,
+				E538E55D26EA4F93004DD25A /* HXCrashViewController.m in Sources */,
 				E579D4BE26C6A7EC00640453 /* HXHomeViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

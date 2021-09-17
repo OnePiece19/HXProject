@@ -6,6 +6,7 @@
 //
 
 #import "AppDelegate.h"
+#import "HXUncaughtExceptionHandle.h"
 
 @interface AppDelegate ()
 
@@ -16,6 +17,7 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     NSLog(@"应用程序启动");
+    [HXUncaughtExceptionHandle installUncaughtSignalExceptionHandler];
     return YES;
 }
 

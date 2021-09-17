@@ -7,6 +7,7 @@
 
 #import "HXUIHomeViewController.h"
 #import "HXEventTestViewController.h"
+#import "OffScreenViewController.h"
 
 @interface HXUIHomeViewController ()
 
@@ -49,15 +50,15 @@
 
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-//    NSDictionary *item =  _dataSource[indexPath.row];
-//    Class cls = NSClassFromString([item objectForKey:@"class"]);
+    NSDictionary *item =  _dataSource[indexPath.row];
+    Class cls = NSClassFromString([item objectForKey:@"class"]);
+
+    [self presentViewController:[[cls alloc] init] animated:YES completion:nil];
+    
+//    UIWindow * rootWindow =  [UIApplication sharedApplication].windows.firstObject;
+//    HXEventTestViewController * eventVC = [[UIViewController alloc] initWithNibName:@"HXEventTestViewController" bundle:[NSBundle mainBundle]];
 //
-//    [self presentViewController:[[cls alloc] init] animated:YES completion:nil];
-    
-    UIWindow * rootWindow =  [UIApplication sharedApplication].windows.firstObject;
-    HXEventTestViewController * eventVC = [[UIViewController alloc] initWithNibName:@"HXEventTestViewController" bundle:[NSBundle mainBundle]];
-    
-    rootWindow.rootViewController = eventVC;
+//    rootWindow.rootViewController = eventVC;
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -116,12 +117,12 @@
                             @"class" : @"KVCViewController"
                             },
                         @{
-                            @"title" : @"KVC crash test",
-                            @"class" : @"TestKVCCrashVC"
+                            @"title" : @"离屏渲染",
+                            @"class" : @"OffScreenViewController"
                             },
                         @{
-                            @"title" : @"KVO",
-                            @"class" : @"KVOViewController"
+                            @"title" : @"UIViewController生命周期",
+                            @"class" : @"LifeCycleViewController"
                             },
                         @{
                             @"title" : @"KVO crash test",

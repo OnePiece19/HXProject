@@ -1,15 +1,18 @@
 PODS:
   - HXLeetCode (0.1.0)
+  - SCLAlertView-Objective-C (1.2.0)
   - YYCategories (1.0.4):
     - YYCategories/no-arc (= 1.0.4)
   - YYCategories/no-arc (1.0.4)
 
 DEPENDENCIES:
   - HXLeetCode (from `Lib/HXLeetCode`)
+  - SCLAlertView-Objective-C
   - YYCategories
 
 SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
+    - SCLAlertView-Objective-C
     - YYCategories
 
 EXTERNAL SOURCES:
@@ -18,8 +21,9 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   HXLeetCode: ecb69386ac7f40e8570fc77c53d2947f08434180
+  SCLAlertView-Objective-C: 84f12f66d779dadad7f293e5e8b7697ba4254ee0
   YYCategories: 6bcd4314c6661a561410dce4a793379ebd306abd
 
-PODFILE CHECKSUM: c329f1214575c990a0a44fde4e5a9bdd52ffa1e1
+PODFILE CHECKSUM: 5f8982d60463fe8fb6415b7b3256092ac2d849cb
 
 COCOAPODS: 1.9.2
