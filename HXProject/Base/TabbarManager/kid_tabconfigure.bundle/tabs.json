@@ -1,0 +1,64 @@
+{
+  "app":"kid",
+  "desc":"yayaxiezi App",
+  "tabBackgroundColor": "#ffffff",
+  "tabSplitLineColor": "#f5f5f5",
+  "tabs":[
+    {
+      "title":"首页",
+      "imageNormal":"home",
+      "imageSelected":"home_selected",
+      "imageLottie":"tab_home",
+      "route":"zyb://yy-app-web/page/index",
+      "needDragRefresh":"0",
+      "needHideNavBar":"1",
+      "navigateTo":"0",
+      "textColorNormal":"#92A2C4",
+      "textColorSelected":"#04AAF7",
+      "needLoginValidate":"0",
+      "navBarBorderColor": "#f5f5f5",
+      "navBarBgColor": "#ffffff",
+      "navTitleWeight": 0,
+      "navTitleColor": "#333333"
+    },
+    {
+      "title":"课程",
+      "imageNormal":"course",
+      "imageSelected":"course_selected",
+      "imageLottie":"tab_course",
+      "route":"zyb://yy-app-web/page/gotoClass",
+      "needDragRefresh":"0",
+      "needHideNavBar":"1",
+      "navigateTo":"1",
+      "textColorNormal":"#92A2C4",
+      "textColorSelected":"#04AAF7",
+      "needLoginValidate":"0"
+    },
+    {
+      "title":"广场",
+      "imageNormal":"square",
+      "imageSelected":"square_selected",
+      "imageLottie":"tab_square",
+      "route":"zyb://yy-app-web/page/worksWall",
+      "needDragRefresh":"0",
+      "needHideNavBar":"1",
+      "navigateTo":"1",
+      "textColorNormal":"#92A2C4",
+      "textColorSelected":"#04AAF7",
+      "needLoginValidate":"0"
+    },
+    {
+      "title":"我的",
+      "imageNormal":"my",
+      "imageSelected":"my_selected",
+      "imageLottie":"tab_my",
+      "route":"zyb://yy-app-web/page/my",
+      "needDragRefresh":"0",
+      "needHideNavBar":"1",
+      "navigateTo":"1",
+      "textColorNormal":"#92A2C4",
+      "textColorSelected":"#04AAF7",
+      "needLoginValidate":"0"
+    }
+  ]
+}

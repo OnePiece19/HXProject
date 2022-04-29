@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0A76037B281C385800D8D227 /* kid_tabconfigure.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 0A76037A281C385800D8D227 /* kid_tabconfigure.bundle */; };
 		416B6C670124327831542B28 /* libPods-App-HXProject.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CDE3A508FE27A32CE176CF32 /* libPods-App-HXProject.a */; };
 		E538E52626E3ED74004DD25A /* OffScreenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E538E52526E3ED74004DD25A /* OffScreenViewController.m */; };
 		E538E52A26E63902004DD25A /* HXRunTimeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E538E52926E63902004DD25A /* HXRunTimeViewController.m */; };
@@ -74,6 +75,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0A76037A281C385800D8D227 /* kid_tabconfigure.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = kid_tabconfigure.bundle; sourceTree = "<group>"; };
 		1F8F8A35893B54DFF3F1F116 /* Pods-App-HXProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-App-HXProject.debug.xcconfig"; path = "Target Support Files/Pods-App-HXProject/Pods-App-HXProject.debug.xcconfig"; sourceTree = "<group>"; };
 		56C42A1BCF885A4633D6E89D /* Pods-HXProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HXProject.debug.xcconfig"; path = "Target Support Files/Pods-HXProject/Pods-HXProject.debug.xcconfig"; sourceTree = "<group>"; };
 		AA05304A2881597236855BD5 /* Pods-HXProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HXProject.release.xcconfig"; path = "Target Support Files/Pods-HXProject/Pods-HXProject.release.xcconfig"; sourceTree = "<group>"; };
@@ -261,6 +263,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0A760379281C37B500D8D227 /* TabbarManager */ = {
+			isa = PBXGroup;
+			children = (
+				0A76037A281C385800D8D227 /* kid_tabconfigure.bundle */,
+			);
+			path = TabbarManager;
+			sourceTree = "<group>";
+		};
 		2F8D41A86FEFFD220014BCC4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -540,6 +550,7 @@
 		E5ADAA5226C430CD00D3BD6E /* Base */ = {
 			isa = PBXGroup;
 			children = (
+				0A760379281C37B500D8D227 /* TabbarManager */,
 				E579D4D326C6FC7A00640453 /* ViewController */,
 				E5ADAA5326C430CD00D3BD6E /* TabBarController */,
 				E579D4BF26C6A93A00640453 /* NavigationController */,
@@ -838,6 +849,7 @@
 				E538E54226E68518004DD25A /* landback3.PNG in Resources */,
 				E538E54526E68518004DD25A /* landback2.PNG in Resources */,
 				E584E36126D63B3600A55DFE /* HXEventTestViewController.xib in Resources */,
+				0A76037B281C385800D8D227 /* kid_tabconfigure.bundle in Resources */,
 				E5ADAA3826C3FC1000D3BD6E /* LaunchScreen.storyboard in Resources */,
 				E5880DA026C807D00067376C /* KVOViewController.xib in Resources */,
 				E5ADAA3526C3FC1000D3BD6E /* Assets.xcassets in Resources */,
