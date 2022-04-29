@@ -13,3 +13,4 @@
 #define UIScreenHeigh ([[UIScreen mainScreen] bounds].size.height)
 
 #endif /* BaseDefine_h */
+
