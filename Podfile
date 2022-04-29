@@ -23,12 +23,12 @@ end
 
 #☆☆☆☆☆ 开发阶段本地库 ☆☆☆☆☆
 def dev_local_pods
-  pod 'HXLeetCode', :path => 'Lib/HXLeetCode'
+   pod 'HXLeetCode', :path => 'Lib/HXLeetCode'
 end
 
 #☆☆☆☆☆ 测试阶段远程 ☆☆☆☆☆
 def dev_remote_pods
-#  pod 'HXLeetCode', :git => 'git@github.com:OnePiece19/HXLeetCode.git', :branch => 'master'
+# pod 'HXLeetCode', :git => 'git@github.com:OnePiece19/HXLeetCode.git', :branch => 'master'
 end
 
 #☆☆☆☆☆ 三方库 ☆☆☆☆☆

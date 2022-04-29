@@ -6,7 +6,7 @@ PODS:
   - YYCategories/no-arc (1.0.4)
 
 DEPENDENCIES:
-  - HXLeetCode (from `Lib/HXLeetCode`)
+  - "HXLeetCode (from `git@github.com:OnePiece19/HXLeetCode.git`, branch `master`)"
   - SCLAlertView-Objective-C
   - YYCategories
 
@@ -17,13 +17,19 @@ SPEC REPOS:
 
 EXTERNAL SOURCES:
   HXLeetCode:
-    :path: Lib/HXLeetCode
+    :branch: master
+    :git: "git@github.com:OnePiece19/HXLeetCode.git"
+
+CHECKOUT OPTIONS:
+  HXLeetCode:
+    :commit: 23b0cfed4529c0aa19ff11c3e5795edefdbc6157
+    :git: "git@github.com:OnePiece19/HXLeetCode.git"
 
 SPEC CHECKSUMS:
   HXLeetCode: ecb69386ac7f40e8570fc77c53d2947f08434180
   SCLAlertView-Objective-C: 84f12f66d779dadad7f293e5e8b7697ba4254ee0
   YYCategories: 6bcd4314c6661a561410dce4a793379ebd306abd
 
-PODFILE CHECKSUM: 5f8982d60463fe8fb6415b7b3256092ac2d849cb
+PODFILE CHECKSUM: 053fb2257c49a0a8a36a9bab4f2cac7f8e9b15f6
 
-COCOAPODS: 1.9.2
+COCOAPODS: 1.8.4
