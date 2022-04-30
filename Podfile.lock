@@ -1,5 +1,28 @@
 PODS:
-  - HXLeetCode (0.1.0)
+  - AFNetworking (2.7.0):
+    - AFNetworking/NSURLConnection (= 2.7.0)
+    - AFNetworking/NSURLSession (= 2.7.0)
+    - AFNetworking/Reachability (= 2.7.0)
+    - AFNetworking/Security (= 2.7.0)
+    - AFNetworking/Serialization (= 2.7.0)
+    - AFNetworking/UIKit (= 2.7.0)
+  - AFNetworking/NSURLConnection (2.7.0):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/NSURLSession (2.7.0):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (2.7.0)
+  - AFNetworking/Security (2.7.0)
+  - AFNetworking/Serialization (2.7.0)
+  - AFNetworking/UIKit (2.7.0):
+    - AFNetworking/NSURLConnection
+    - AFNetworking/NSURLSession
+  - HXLeetCode (0.1.0):
+    - AFNetworking (~> 2.3)
+  - JSONModel (1.8.0)
   - SCLAlertView-Objective-C (1.2.0)
   - YYCategories (1.0.4):
     - YYCategories/no-arc (= 1.0.4)
@@ -7,11 +30,14 @@ PODS:
 
 DEPENDENCIES:
   - HXLeetCode (from `Lib/HXLeetCode`)
+  - JSONModel
   - SCLAlertView-Objective-C
   - YYCategories
 
 SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
+    - AFNetworking
+    - JSONModel
     - SCLAlertView-Objective-C
     - YYCategories
 
@@ -20,10 +46,12 @@ EXTERNAL SOURCES:
     :path: Lib/HXLeetCode
 
 SPEC CHECKSUMS:
-  HXLeetCode: ecb69386ac7f40e8570fc77c53d2947f08434180
+  AFNetworking: 8dd5f9b9691e09186393069a12cc3b5ed7c8b511
+  HXLeetCode: 64be648d16e35fa6f427c037b2d7fdfa30c0367a
+  JSONModel: 02ab723958366a3fd27da57ea2af2113658762e9
   SCLAlertView-Objective-C: 84f12f66d779dadad7f293e5e8b7697ba4254ee0
   YYCategories: 6bcd4314c6661a561410dce4a793379ebd306abd
 
-PODFILE CHECKSUM: 33f7ed8668f708064909add079c71ac276224bef
+PODFILE CHECKSUM: 5a0632e147ad2c8da6389cc7e2a68b7350d3015a
 
 COCOAPODS: 1.8.4

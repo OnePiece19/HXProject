@@ -27,6 +27,9 @@
 
 
 #pragma mark -- 公共类文件 --
+#import "NBSafetyKit.h"
+
+
 //#import "AppDelegate.h"
 //#import "AppDelegate+AppService.h"
 #import "PBViewController.h"

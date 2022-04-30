@@ -34,20 +34,14 @@ end
 #☆☆☆☆☆ 三方库 ☆☆☆☆☆
 def vendors_pods
   
+  
+  
+  pod 'JSONModel'
+  
   pod 'YYCategories'
   pod 'SCLAlertView-Objective-C'
   
-  pod 'ReactiveCocoa', '2.1.8'
-  pod 'UMCCommon'
-  pod 'UMCPush'
-  pod 'UXCModule-iOS', '0.1.7.6'
-  pod 'MJRefresh'
-  pod 'TTTAttributedLabel', '2.0.0'
-  pod 'YYModel', '~> 1.0.4'
-  pod 'Bugly', '2.5.2'
-  pod 'ZYBLottieiOS','2.5.5'
-  pod 'AFNetworking','4.0.1'
-  pod 'FBAllocationTracker', :git => 'https://gitee.com/mirrors_facebookarchive/FBAllocationTracker.git', :tag => '0.1.5'
+
 end
 
 #☆☆☆☆☆ 调试工具 ☆☆☆☆☆

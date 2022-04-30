@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0A1B34BF281D2EED006480E7 /* HXTabConfigureManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A1B34BE281D2EED006480E7 /* HXTabConfigureManager.m */; };
 		0A76037B281C385800D8D227 /* kid_tabconfigure.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 0A76037A281C385800D8D227 /* kid_tabconfigure.bundle */; };
 		416B6C670124327831542B28 /* libPods-App-HXProject.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CDE3A508FE27A32CE176CF32 /* libPods-App-HXProject.a */; };
 		E538E52626E3ED74004DD25A /* OffScreenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E538E52526E3ED74004DD25A /* OffScreenViewController.m */; };
@@ -75,6 +76,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0A1B34BD281D2EED006480E7 /* HXTabConfigureManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HXTabConfigureManager.h; sourceTree = "<group>"; };
+		0A1B34BE281D2EED006480E7 /* HXTabConfigureManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HXTabConfigureManager.m; sourceTree = "<group>"; };
 		0A76037A281C385800D8D227 /* kid_tabconfigure.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = kid_tabconfigure.bundle; sourceTree = "<group>"; };
 		1F8F8A35893B54DFF3F1F116 /* Pods-App-HXProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-App-HXProject.debug.xcconfig"; path = "Target Support Files/Pods-App-HXProject/Pods-App-HXProject.debug.xcconfig"; sourceTree = "<group>"; };
 		56C42A1BCF885A4633D6E89D /* Pods-HXProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HXProject.debug.xcconfig"; path = "Target Support Files/Pods-HXProject/Pods-HXProject.debug.xcconfig"; sourceTree = "<group>"; };
@@ -266,6 +269,8 @@
 		0A760379281C37B500D8D227 /* TabbarManager */ = {
 			isa = PBXGroup;
 			children = (
+				0A1B34BD281D2EED006480E7 /* HXTabConfigureManager.h */,
+				0A1B34BE281D2EED006480E7 /* HXTabConfigureManager.m */,
 				0A76037A281C385800D8D227 /* kid_tabconfigure.bundle */,
 			);
 			path = TabbarManager;
@@ -923,6 +928,7 @@
 				E538E54026E68518004DD25A /* LifeCycleViewController.m in Sources */,
 				E584E36426D640EB00A55DFE /* B_View.m in Sources */,
 				E538E52626E3ED74004DD25A /* OffScreenViewController.m in Sources */,
+				0A1B34BF281D2EED006480E7 /* HXTabConfigureManager.m in Sources */,
 				E584E36726D640F900A55DFE /* C_View.m in Sources */,
 				E5ADAFE926C500C900D3BD6E /* HXNotificationViewController.m in Sources */,
 				E584E37026D6411800A55DFE /* F_View.m in Sources */,
