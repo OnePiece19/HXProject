@@ -37,7 +37,8 @@ def vendors_pods
   
   
   pod 'JSONModel'
-  
+  pod 'lottie-ios', '2.5.3'       # https://blog.csdn.net/iOSjack/article/details/111032882
+  pod 'Masonry', '1.1.0'
   pod 'YYCategories'
   pod 'SCLAlertView-Objective-C'
   

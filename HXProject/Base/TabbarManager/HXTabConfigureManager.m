@@ -8,7 +8,7 @@
 #import "HXTabConfigureManager.h"
 #import <Foundation/NSJSONSerialization.h>
 
-@implementation HXTabSettingModel : JSONModel
+@implementation HXTabBarStyleModel : JSONModel
 
 +(BOOL)propertyIsOptional:(NSString *)propertyName{
     return true;
@@ -16,7 +16,7 @@
 @end
 
 
-@implementation HXTabModel
+@implementation HXTabBarItemModel
 
 +(BOOL)propertyIsOptional:(NSString *)propertyName{
     return true;
@@ -44,43 +44,78 @@
     return sourcePath;
 }
 
-- (HXTabSettingModel *)tabStetingInfo {
-    if (!_tabStetingInfo) {
+- (UIImage *)getSourceImageNormalWithItemModel:(HXTabBarItemModel *)itemModel {
+    NSString *imgNormalTemp;
+    if ([UIScreen mainScreen].scale < 3) {
+        imgNormalTemp = [NSString stringWithFormat:@"%@@2x",itemModel.imageNormal];
+    } else {
+        imgNormalTemp = [NSString stringWithFormat:@"%@@3x",itemModel.imageNormal];
+    }
+    NSString *imgNormalPath = [self getSourcePathWithName:imgNormalTemp type:@"png" bundle:@"kid_tabconfigure"];
+    
+    UIImage * imageNormal;
+    if (imgNormalPath.length > 0) {
+        imageNormal = [[UIImage imageWithContentsOfFile:imgNormalPath] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+    } else {
+        imageNormal = [[UIImage imageNamed:imgNormalTemp] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+    }
+    
+    return imageNormal;
+}
+
+- (UIImage *)getSourceImageSelectedWithItemModel:(HXTabBarItemModel *)itemModel {
+    NSString *imgSelectedTemp;
+    if ([UIScreen mainScreen].scale < 3) {
+        imgSelectedTemp = [NSString stringWithFormat:@"%@@2x",itemModel.imageSelected];
+    } else {
+        imgSelectedTemp = [NSString stringWithFormat:@"%@@3x",itemModel.imageSelected];
+    }
+    NSString *imgSelectedPath = [self getSourcePathWithName:imgSelectedTemp type:@"png" bundle:@"kid_tabconfigure"];
+    
+    UIImage * imageSelected;
+    if (imgSelectedPath.length > 0) {
+        imageSelected = [[UIImage imageWithContentsOfFile:imgSelectedPath] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+    } else {
+        imageSelected = [[UIImage imageNamed:imgSelectedTemp] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+    }
+    return imageSelected;
+}
+
+- (HXTabBarStyleModel *)tabBarModel {
+    if (!_tabBarModel) {
         NSString *tabSInfo = [self getSourcePathWithName:@"tabs.json"type:nil bundle:@"kid_tabconfigure"];
         NSData *tabData = [NSData dataWithContentsOfURL:[NSURL fileURLWithPath:tabSInfo]];
         NSDictionary *jsonDict = [NSJSONSerialization JSONObjectWithData:tabData options:NSJSONReadingMutableLeaves error:nil];
         
-        _tabStetingInfo = [[HXTabSettingModel alloc] init];
-        
+        _tabBarModel = [[HXTabBarStyleModel alloc] init];
         NSString *tabBg = [jsonDict objectForKeySafely:@"tabBackgroundColor"];
         NSString *tabLineBg = [jsonDict objectForKeySafely:@"tabSplitLineColor"];
         if (tabBg && tabBg.length > 0) {
-            _tabStetingInfo.tabBackgroundColor = tabBg;
+            _tabBarModel.tabBackgroundColor = tabBg;
         }
         if (tabLineBg && tabLineBg.length > 0) {
-            _tabStetingInfo.tabSplitLineColor = tabLineBg;
+            _tabBarModel.tabSplitLineColor = tabLineBg;
         }
     }
-    return _tabStetingInfo;
+    return _tabBarModel;
 }
 
-- (NSMutableArray *)tabSourceList {
-    if (!_tabSourceList) {
+- (NSArray *)tabBarItemModelArray {
+    if (!_tabBarItemModelArray) {
         NSString *tabSInfo = [self getSourcePathWithName:@"tabs.json"type:nil bundle:@"kid_tabconfigure"];
         NSData *tabData = [NSData dataWithContentsOfURL:[NSURL fileURLWithPath:tabSInfo]];
         NSDictionary *jsonDict = [NSJSONSerialization JSONObjectWithData:tabData options:NSJSONReadingMutableLeaves error:nil];
-        
-        _tabSourceList = @[].mutableCopy;
-        
+
+        NSMutableArray * tempMutArr = [NSMutableArray new];
         NSArray *list = [jsonDict objectForKeySafely:@"tabs"];
         for (NSDictionary *info in list) {
             NSError *error;
-            HXTabModel *currentM = [[HXTabModel alloc] initWithDictionary:info error:&error];
-            [_tabSourceList addObject:currentM];
+            HXTabBarItemModel *currentM = [[HXTabBarItemModel alloc] initWithDictionary:info error:&error];
+            [tempMutArr addObject:currentM];
         }
-       
+        _tabBarItemModelArray = [tempMutArr copy];
     }
-    return _tabSourceList;
+    return _tabBarItemModelArray;
 }
 
 @end

@@ -10,7 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface HXTabSettingModel : JSONModel
+@interface HXTabBarStyleModel : JSONModel
 
 @property (nonatomic, copy) NSString *tabBackgroundColor;
 @property (nonatomic, copy) NSString *tabSplitLineColor;
@@ -18,7 +18,7 @@ NS_ASSUME_NONNULL_BEGIN
 @end
 
 
-@interface HXTabModel : JSONModel
+@interface HXTabBarItemModel : JSONModel
 
 @property (nonatomic, copy) NSString *title;
 @property (nonatomic, copy) NSString *navitationTitle;
@@ -45,11 +45,26 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface HXTabConfigureManager : NSObject
 
-@property (nonatomic, strong) HXTabSettingModel *tabStetingInfo;
+/// 设置TabBar样式模型
+@property (nonatomic, strong) HXTabBarStyleModel *tabBarModel;
 
-@property (nonatomic, strong) NSMutableArray <HXTabModel *> *tabSourceList;
+/// 设置TabBarItems样式模型
+@property (nonatomic, strong) NSArray<HXTabBarItemModel *> *tabBarItemModelArray;
 
+
+/// 获取资源路径
+/// @param sourceName 资源名称
+/// @param type 类型
+/// @param bundleName bundle名称
 - (NSString *)getSourcePathWithName:(NSString *)sourceName type:(nullable NSString *)type bundle:(nullable NSString *)bundleName;
+
+/// 获取正常图片资源
+/// @param itemModel 样式模型
+- (UIImage *)getSourceImageNormalWithItemModel:(HXTabBarItemModel *)itemModel;
+
+/// 获取选中图片资源
+/// @param itemModel 样式模型
+- (UIImage *)getSourceImageSelectedWithItemModel:(HXTabBarItemModel *)itemModel;
 
 @end
 

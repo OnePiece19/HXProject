@@ -8,6 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		0A1B34BF281D2EED006480E7 /* HXTabConfigureManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A1B34BE281D2EED006480E7 /* HXTabConfigureManager.m */; };
+		0A1B34C2281D5CD9006480E7 /* HXMainContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A1B34C1281D5CD9006480E7 /* HXMainContainer.m */; };
+		0A1B34C9281DA7C7006480E7 /* tab_my.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 0A1B34C5281D9C9A006480E7 /* tab_my.bundle */; };
+		0A1B34CA281DA7C7006480E7 /* tab_home.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 0A1B34C6281D9C9A006480E7 /* tab_home.bundle */; };
+		0A1B34CB281DA7C7006480E7 /* tab_square.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 0A1B34C7281D9C9A006480E7 /* tab_square.bundle */; };
+		0A1B34CC281DA7C7006480E7 /* tab_course.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 0A1B34C8281D9C9A006480E7 /* tab_course.bundle */; };
+		0A1B34D4281DB395006480E7 /* YYCustomTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A1B34CF281DB2C3006480E7 /* YYCustomTabBar.m */; };
 		0A76037B281C385800D8D227 /* kid_tabconfigure.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 0A76037A281C385800D8D227 /* kid_tabconfigure.bundle */; };
 		416B6C670124327831542B28 /* libPods-App-HXProject.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CDE3A508FE27A32CE176CF32 /* libPods-App-HXProject.a */; };
 		E538E52626E3ED74004DD25A /* OffScreenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E538E52526E3ED74004DD25A /* OffScreenViewController.m */; };
@@ -78,6 +84,18 @@
 /* Begin PBXFileReference section */
 		0A1B34BD281D2EED006480E7 /* HXTabConfigureManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HXTabConfigureManager.h; sourceTree = "<group>"; };
 		0A1B34BE281D2EED006480E7 /* HXTabConfigureManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HXTabConfigureManager.m; sourceTree = "<group>"; };
+		0A1B34C0281D5CD9006480E7 /* HXMainContainer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HXMainContainer.h; sourceTree = "<group>"; };
+		0A1B34C1281D5CD9006480E7 /* HXMainContainer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HXMainContainer.m; sourceTree = "<group>"; };
+		0A1B34C5281D9C9A006480E7 /* tab_my.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = tab_my.bundle; sourceTree = "<group>"; };
+		0A1B34C6281D9C9A006480E7 /* tab_home.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = tab_home.bundle; sourceTree = "<group>"; };
+		0A1B34C7281D9C9A006480E7 /* tab_square.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = tab_square.bundle; sourceTree = "<group>"; };
+		0A1B34C8281D9C9A006480E7 /* tab_course.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = tab_course.bundle; sourceTree = "<group>"; };
+		0A1B34CE281DB2C3006480E7 /* UITabBarItem+Badge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UITabBarItem+Badge.h"; sourceTree = "<group>"; };
+		0A1B34CF281DB2C3006480E7 /* YYCustomTabBar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YYCustomTabBar.m; sourceTree = "<group>"; };
+		0A1B34D0281DB2C3006480E7 /* UIView+Badge.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+Badge.m"; sourceTree = "<group>"; };
+		0A1B34D1281DB2C3006480E7 /* UITabBarItem+Badge.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UITabBarItem+Badge.m"; sourceTree = "<group>"; };
+		0A1B34D2281DB2C3006480E7 /* YYCustomTabBar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YYCustomTabBar.h; sourceTree = "<group>"; };
+		0A1B34D3281DB2C3006480E7 /* UIView+Badge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+Badge.h"; sourceTree = "<group>"; };
 		0A76037A281C385800D8D227 /* kid_tabconfigure.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = kid_tabconfigure.bundle; sourceTree = "<group>"; };
 		1F8F8A35893B54DFF3F1F116 /* Pods-App-HXProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-App-HXProject.debug.xcconfig"; path = "Target Support Files/Pods-App-HXProject/Pods-App-HXProject.debug.xcconfig"; sourceTree = "<group>"; };
 		56C42A1BCF885A4633D6E89D /* Pods-HXProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HXProject.debug.xcconfig"; path = "Target Support Files/Pods-HXProject/Pods-HXProject.debug.xcconfig"; sourceTree = "<group>"; };
@@ -266,11 +284,47 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0A1B34C3281D9C9A006480E7 /* Lottie */ = {
+			isa = PBXGroup;
+			children = (
+				0A1B34C4281D9C9A006480E7 /* Tab */,
+			);
+			path = Lottie;
+			sourceTree = "<group>";
+		};
+		0A1B34C4281D9C9A006480E7 /* Tab */ = {
+			isa = PBXGroup;
+			children = (
+				0A1B34C5281D9C9A006480E7 /* tab_my.bundle */,
+				0A1B34C6281D9C9A006480E7 /* tab_home.bundle */,
+				0A1B34C7281D9C9A006480E7 /* tab_square.bundle */,
+				0A1B34C8281D9C9A006480E7 /* tab_course.bundle */,
+			);
+			path = Tab;
+			sourceTree = "<group>";
+		};
+		0A1B34CD281DB2C3006480E7 /* Tabbar */ = {
+			isa = PBXGroup;
+			children = (
+				0A1B34CE281DB2C3006480E7 /* UITabBarItem+Badge.h */,
+				0A1B34D1281DB2C3006480E7 /* UITabBarItem+Badge.m */,
+				0A1B34D3281DB2C3006480E7 /* UIView+Badge.h */,
+				0A1B34D0281DB2C3006480E7 /* UIView+Badge.m */,
+				0A1B34D2281DB2C3006480E7 /* YYCustomTabBar.h */,
+				0A1B34CF281DB2C3006480E7 /* YYCustomTabBar.m */,
+			);
+			path = Tabbar;
+			sourceTree = "<group>";
+		};
 		0A760379281C37B500D8D227 /* TabbarManager */ = {
 			isa = PBXGroup;
 			children = (
+				0A1B34C0281D5CD9006480E7 /* HXMainContainer.h */,
+				0A1B34C1281D5CD9006480E7 /* HXMainContainer.m */,
 				0A1B34BD281D2EED006480E7 /* HXTabConfigureManager.h */,
 				0A1B34BE281D2EED006480E7 /* HXTabConfigureManager.m */,
+				0A1B34CD281DB2C3006480E7 /* Tabbar */,
+				0A1B34C3281D9C9A006480E7 /* Lottie */,
 				0A76037A281C385800D8D227 /* kid_tabconfigure.bundle */,
 			);
 			path = TabbarManager;
@@ -849,6 +903,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0A1B34C9281DA7C7006480E7 /* tab_my.bundle in Resources */,
+				0A1B34CA281DA7C7006480E7 /* tab_home.bundle in Resources */,
+				0A1B34CB281DA7C7006480E7 /* tab_square.bundle in Resources */,
+				0A1B34CC281DA7C7006480E7 /* tab_course.bundle in Resources */,
 				E538E55E26EA4F93004DD25A /* HXCrashViewController.xib in Resources */,
 				E5BE205226CD1227004A5CAC /* AutoReleaseViewController.xib in Resources */,
 				E538E54226E68518004DD25A /* landback3.PNG in Resources */,
@@ -894,6 +952,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0A1B34D4281DB395006480E7 /* YYCustomTabBar.m in Sources */,
 				E5ADAA3026C3FC0E00D3BD6E /* ViewController.m in Sources */,
 				E5BE205126CD1227004A5CAC /* AutoReleaseViewController.m in Sources */,
 				E584E37326D645E000A55DFE /* A_View.m in Sources */,
@@ -906,6 +965,7 @@
 				E5ADAFF826C54DA200D3BD6E /* KVCViewController.m in Sources */,
 				E5ADAACA26C4521500D3BD6E /* NSAttributedString+Safety.m in Sources */,
 				E538E52A26E63902004DD25A /* HXRunTimeViewController.m in Sources */,
+				0A1B34C2281D5CD9006480E7 /* HXMainContainer.m in Sources */,
 				E5ADAA4F26C4307D00D3BD6E /* SceneDelegate.m in Sources */,
 				E538E54426E68518004DD25A /* LandViewController.m in Sources */,
 				E579D4CF26C6A9A300640453 /* PBNotiConst.m in Sources */,

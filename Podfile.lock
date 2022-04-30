@@ -23,6 +23,8 @@ PODS:
   - HXLeetCode (0.1.0):
     - AFNetworking (~> 2.3)
   - JSONModel (1.8.0)
+  - lottie-ios (2.5.3)
+  - Masonry (1.1.0)
   - SCLAlertView-Objective-C (1.2.0)
   - YYCategories (1.0.4):
     - YYCategories/no-arc (= 1.0.4)
@@ -31,6 +33,8 @@ PODS:
 DEPENDENCIES:
   - HXLeetCode (from `Lib/HXLeetCode`)
   - JSONModel
+  - lottie-ios (= 2.5.3)
+  - Masonry (= 1.1.0)
   - SCLAlertView-Objective-C
   - YYCategories
 
@@ -38,6 +42,8 @@ SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
     - AFNetworking
     - JSONModel
+    - lottie-ios
+    - Masonry
     - SCLAlertView-Objective-C
     - YYCategories
 
@@ -49,9 +55,11 @@ SPEC CHECKSUMS:
   AFNetworking: 8dd5f9b9691e09186393069a12cc3b5ed7c8b511
   HXLeetCode: 64be648d16e35fa6f427c037b2d7fdfa30c0367a
   JSONModel: 02ab723958366a3fd27da57ea2af2113658762e9
+  lottie-ios: a50d5c0160425cd4b01b852bb9578963e6d92d31
+  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   SCLAlertView-Objective-C: 84f12f66d779dadad7f293e5e8b7697ba4254ee0
   YYCategories: 6bcd4314c6661a561410dce4a793379ebd306abd
 
-PODFILE CHECKSUM: 5a0632e147ad2c8da6389cc7e2a68b7350d3015a
+PODFILE CHECKSUM: 6239d19aee1df9e121e38cbf1247d90f041af970
 
 COCOAPODS: 1.8.4
