@@ -14,6 +14,10 @@
 		0A1B34CB281DA7C7006480E7 /* tab_square.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 0A1B34C7281D9C9A006480E7 /* tab_square.bundle */; };
 		0A1B34CC281DA7C7006480E7 /* tab_course.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 0A1B34C8281D9C9A006480E7 /* tab_course.bundle */; };
 		0A1B34D4281DB395006480E7 /* YYCustomTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A1B34CF281DB2C3006480E7 /* YYCustomTabBar.m */; };
+		0A5CBB68282199CD007B2642 /* HXMVVMViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A5CBB67282199CD007B2642 /* HXMVVMViewController.m */; };
+		0A5CBB6B28219A66007B2642 /* HXMVVMViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A5CBB6A28219A66007B2642 /* HXMVVMViewModel.m */; };
+		0A5CBB6E28219A7C007B2642 /* HXMVVMModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A5CBB6D28219A7C007B2642 /* HXMVVMModel.m */; };
+		0A5CBB7528219C38007B2642 /* HXMVVMCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A5CBB7428219C38007B2642 /* HXMVVMCell.m */; };
 		0A76037B281C385800D8D227 /* kid_tabconfigure.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 0A76037A281C385800D8D227 /* kid_tabconfigure.bundle */; };
 		416B6C670124327831542B28 /* libPods-App-HXProject.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CDE3A508FE27A32CE176CF32 /* libPods-App-HXProject.a */; };
 		E538E52626E3ED74004DD25A /* OffScreenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E538E52526E3ED74004DD25A /* OffScreenViewController.m */; };
@@ -96,6 +100,14 @@
 		0A1B34D1281DB2C3006480E7 /* UITabBarItem+Badge.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UITabBarItem+Badge.m"; sourceTree = "<group>"; };
 		0A1B34D2281DB2C3006480E7 /* YYCustomTabBar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YYCustomTabBar.h; sourceTree = "<group>"; };
 		0A1B34D3281DB2C3006480E7 /* UIView+Badge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+Badge.h"; sourceTree = "<group>"; };
+		0A5CBB66282199CD007B2642 /* HXMVVMViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HXMVVMViewController.h; sourceTree = "<group>"; };
+		0A5CBB67282199CD007B2642 /* HXMVVMViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HXMVVMViewController.m; sourceTree = "<group>"; };
+		0A5CBB6928219A66007B2642 /* HXMVVMViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HXMVVMViewModel.h; sourceTree = "<group>"; };
+		0A5CBB6A28219A66007B2642 /* HXMVVMViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HXMVVMViewModel.m; sourceTree = "<group>"; };
+		0A5CBB6C28219A7C007B2642 /* HXMVVMModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HXMVVMModel.h; sourceTree = "<group>"; };
+		0A5CBB6D28219A7C007B2642 /* HXMVVMModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HXMVVMModel.m; sourceTree = "<group>"; };
+		0A5CBB7328219C38007B2642 /* HXMVVMCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HXMVVMCell.h; sourceTree = "<group>"; };
+		0A5CBB7428219C38007B2642 /* HXMVVMCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HXMVVMCell.m; sourceTree = "<group>"; };
 		0A76037A281C385800D8D227 /* kid_tabconfigure.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = kid_tabconfigure.bundle; sourceTree = "<group>"; };
 		1F8F8A35893B54DFF3F1F116 /* Pods-App-HXProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-App-HXProject.debug.xcconfig"; path = "Target Support Files/Pods-App-HXProject/Pods-App-HXProject.debug.xcconfig"; sourceTree = "<group>"; };
 		56C42A1BCF885A4633D6E89D /* Pods-HXProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HXProject.debug.xcconfig"; path = "Target Support Files/Pods-HXProject/Pods-HXProject.debug.xcconfig"; sourceTree = "<group>"; };
@@ -314,6 +326,45 @@
 				0A1B34CF281DB2C3006480E7 /* YYCustomTabBar.m */,
 			);
 			path = Tabbar;
+			sourceTree = "<group>";
+		};
+		0A5CBB6528219987007B2642 /* MVVM */ = {
+			isa = PBXGroup;
+			children = (
+				0A5CBB7228219B9D007B2642 /* ViewModel */,
+				0A5CBB7128219B76007B2642 /* ViewController */,
+				0A5CBB7028219B68007B2642 /* Model */,
+			);
+			path = MVVM;
+			sourceTree = "<group>";
+		};
+		0A5CBB7028219B68007B2642 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0A5CBB6C28219A7C007B2642 /* HXMVVMModel.h */,
+				0A5CBB6D28219A7C007B2642 /* HXMVVMModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		0A5CBB7128219B76007B2642 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				0A5CBB66282199CD007B2642 /* HXMVVMViewController.h */,
+				0A5CBB67282199CD007B2642 /* HXMVVMViewController.m */,
+				0A5CBB7328219C38007B2642 /* HXMVVMCell.h */,
+				0A5CBB7428219C38007B2642 /* HXMVVMCell.m */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		0A5CBB7228219B9D007B2642 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				0A5CBB6928219A66007B2642 /* HXMVVMViewModel.h */,
+				0A5CBB6A28219A66007B2642 /* HXMVVMViewModel.m */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		0A760379281C37B500D8D227 /* TabbarManager */ = {
@@ -549,13 +600,6 @@
 			path = KVOCrash;
 			sourceTree = "<group>";
 		};
-		E5A1601726CE9F9300B24227 /* New Group */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "New Group";
-			sourceTree = "<group>";
-		};
 		E5ADAA1C26C3FC0E00D3BD6E = {
 			isa = PBXGroup;
 			children = (
@@ -751,17 +795,9 @@
 			children = (
 				E5ADAFE726C500C900D3BD6E /* HXNotificationViewController.h */,
 				E5ADAFE826C500C900D3BD6E /* HXNotificationViewController.m */,
-				E5ADAFE626C5007E00D3BD6E /* NSNotificationCenter */,
 				E5ADAFEA26C5011300D3BD6E /* CustomNotificationCenter */,
 			);
 			path = NotificationCenter;
-			sourceTree = "<group>";
-		};
-		E5ADAFE626C5007E00D3BD6E /* NSNotificationCenter */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = NSNotificationCenter;
 			sourceTree = "<group>";
 		};
 		E5ADAFEA26C5011300D3BD6E /* CustomNotificationCenter */ = {
@@ -782,9 +818,9 @@
 			children = (
 				E579D4BC26C6A7EC00640453 /* HXHomeViewController.h */,
 				E579D4BD26C6A7EC00640453 /* HXHomeViewController.m */,
+				0A5CBB6528219987007B2642 /* MVVM */,
 				E538E55926EA4F4E004DD25A /* Crash */,
 				E538E52726E638BA004DD25A /* RunTime */,
-				E5A1601726CE9F9300B24227 /* New Group */,
 				E5BE204D26CD11C7004A5CAC /* AutoReleasePool */,
 				E5ADB00326C5A8F200D3BD6E /* YSCDefender */,
 				E5ADAFFF26C5507A00D3BD6E /* KVO */,
@@ -953,11 +989,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				0A1B34D4281DB395006480E7 /* YYCustomTabBar.m in Sources */,
+				0A5CBB6B28219A66007B2642 /* HXMVVMViewModel.m in Sources */,
 				E5ADAA3026C3FC0E00D3BD6E /* ViewController.m in Sources */,
 				E5BE205126CD1227004A5CAC /* AutoReleaseViewController.m in Sources */,
 				E584E37326D645E000A55DFE /* A_View.m in Sources */,
 				E584E36A26D6410400A55DFE /* D_View.m in Sources */,
 				E5ADB01626C5AB0B00D3BD6E /* BaseCrashViewController.m in Sources */,
+				0A5CBB68282199CD007B2642 /* HXMVVMViewController.m in Sources */,
 				E5880D9F26C807D00067376C /* KVOViewController.m in Sources */,
 				E579D4C226C6A93A00640453 /* PBNavigationController.m in Sources */,
 				E5ADB00F26C5A8F200D3BD6E /* NSObject+KVODefender.m in Sources */,
@@ -988,6 +1026,7 @@
 				E538E54026E68518004DD25A /* LifeCycleViewController.m in Sources */,
 				E584E36426D640EB00A55DFE /* B_View.m in Sources */,
 				E538E52626E3ED74004DD25A /* OffScreenViewController.m in Sources */,
+				0A5CBB7528219C38007B2642 /* HXMVVMCell.m in Sources */,
 				0A1B34BF281D2EED006480E7 /* HXTabConfigureManager.m in Sources */,
 				E584E36726D640F900A55DFE /* C_View.m in Sources */,
 				E5ADAFE926C500C900D3BD6E /* HXNotificationViewController.m in Sources */,
@@ -1009,6 +1048,7 @@
 				E5ADB02726C5AF7D00D3BD6E /* KVCCrashObject.m in Sources */,
 				E538E55D26EA4F93004DD25A /* HXCrashViewController.m in Sources */,
 				E579D4BE26C6A7EC00640453 /* HXHomeViewController.m in Sources */,
+				0A5CBB6E28219A7C007B2642 /* HXMVVMModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

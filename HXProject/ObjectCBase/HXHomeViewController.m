@@ -160,6 +160,10 @@
                         @{
                             @"title" : @"Crash 分析",
                             @"class" : @"HXCrashViewController"
+                            },
+                        @{
+                            @"title" : @"MVVM",
+                            @"class" : @"HXMVVMViewController"
                             }
                         ];
     }
