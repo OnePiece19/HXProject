@@ -6,6 +6,8 @@
 //
 
 #import "HXHomeViewController.h"
+#import <HXLeetCode/TouchNum.h>
+
 
 @interface HXHomeViewController ()
 
@@ -24,6 +26,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];
+    [TouchNum new];
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
     

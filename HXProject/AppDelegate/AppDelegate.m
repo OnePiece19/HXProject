@@ -17,6 +17,9 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     NSLog(@"应用程序启动");
+//    while (YES) {
+//        NSLog(@"11111");
+//    }
     [HXUncaughtExceptionHandle installUncaughtSignalExceptionHandler];
     return YES;
 }
@@ -80,5 +83,64 @@
     NSLog(@"applicationWillTerminate-被关闭");
 }
 
+
+//- (BOOL)application:(UIApplication *)application handleOpenURL:(NSURL *)url {
+//    if([[url scheme] isEqualToString:@"hxProject"]) {
+//        [application setApplicationIconBadgeNumber:10];
+//
+//        while (YES) {
+//            NSLog(@"1111");
+//        }
+//        return YES;
+//    }
+//
+//    while (YES) {
+//        NSLog(@"1111");
+//    }
+//    return NO;
+//}
+
+- (BOOL)application:(UIApplication*)application openURL:(nonnull NSURL *)url sourceApplication:(nullable NSString*)sourceApplication annotation:(nonnull id)annotation {
+    NSLog(@"%@",[url host] );
+    
+    return YES;
+}
+
+- (BOOL)application:(UIApplication *)app openURL:(NSURL *)url options:(NSDictionary<NSString *,id> *)options {
+
+    // 监听linePay付款完后wap界面跳转
+
+//    [self handleOpenFromLinePayWithUrl:url];
+    NSLog(@"%@",[url host] );
+    
+    return YES;
+
+}
+
+//-(BOOL)application:(UIApplication *)app openURL:(NSURL *)url options:(NSDictionary<UIApplicationOpenURLOptionsKey,id> *)options {
+////  打印出来的就是项目A传递过来的参数
+//    NSLog(@"%@",[url host] );
+//
+//    return YES;
+//}
+
+- (BOOL)application:(UIApplication *)application handleOpenURL:(NSURL *)url {
+    NSLog(@"%@",[url scheme]);
+    return YES;
+}
+
+//- (BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation {
+//    NSLog(@"%@",[url scheme]);
+//    return YES;
+//}
+
+
+//- (BOOL)application:(UIApplication *)app openURL:(NSURL *)url options:(NSDictionary<UIApplicationOpenURLOptionsKey, id> *)options {
+//    if([[url scheme] isEqualToString:@"hxProject"]) {
+//        [app setApplicationIconBadgeNumber:10];
+//        return YES;
+//    }
+//    return NO;
+//}
 
 @end

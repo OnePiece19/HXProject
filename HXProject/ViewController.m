@@ -25,7 +25,6 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
     _titleArray = @[
                     @{
                         @"title" : @"Unrecognized Selector Crash",

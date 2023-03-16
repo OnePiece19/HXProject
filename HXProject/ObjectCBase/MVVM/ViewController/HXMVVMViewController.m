@@ -23,10 +23,6 @@
 
 #pragma mark - UITableViewDelegate
 
-- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-    return 1;
-}
-
 #pragma mark - UITableViewDataSource
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
     return 1;
@@ -34,20 +30,22 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return self.viewModel.dataArray.count;
+//    return self.viewModel.dataArray.count;
+    return 1;
 }
 
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    HXMVVMCell *cell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier];
-    if (!cell) {
-        cell = [[HXMVVMCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellIdentifier];
-    }
+//- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+//{
+//    HXMVVMCell *cell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier];
+//    if (!cell) {
+//        cell = [[HXMVVMCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellIdentifier];
+//    }
     
-    MainModel *model = self.viewModel.dataArray[indexPath.row];
-    cell.model = model;
-    return cell;
-}
+//    MainModel *model = self.viewModel.dataArray[indexPath.row];
+//    cell.model = model;
+//    return cell;
+    
+//}
 
 - (UITableView *)tableView {
     if (!_tableView) {

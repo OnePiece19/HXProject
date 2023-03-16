@@ -18,7 +18,7 @@
     UIWindowScene *windowScene = (UIWindowScene *)scene;
     self.window = [[UIWindow alloc] initWithWindowScene:windowScene];
     self.window.frame = windowScene.coordinateSpace.bounds;
-//    self.window.rootViewController = [HXTabBarController new];
+    self.window.rootViewController = [HXTabBarController new];
     self.window.rootViewController = [HXMainContainer new];
     [self.window makeKeyAndVisible];
 }
