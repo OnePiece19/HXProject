@@ -22,7 +22,7 @@
 /// 判断iPhone系列
 #define IPHONE_X \
 ({BOOL isPhoneX = NO;\
-if (@available(iOS1.0, *)) {\
+if (@available(iOS 11.0, *)) {\
 isPhoneX = kAppWindow.safeAreaInsets.bottom > 0.0;\
 }\
 (isPhoneX);})

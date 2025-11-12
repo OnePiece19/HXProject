@@ -82,7 +82,9 @@
     Class cls = NSClassFromString([item objectForKey:@"class"]);
     UIViewController * vc = (UIViewController *)[[cls alloc] init];
     vc.modalPresentationStyle = UIModalPresentationFullScreen;
-    [self presentViewController:vc animated:YES completion:nil];
+    
+    [self.navigationController pushViewController:vc animated:YES];
+    
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -167,6 +169,10 @@
                         @{
                             @"title" : @"MVVM",
                             @"class" : @"HXMVVMViewController"
+                            },
+                        @{
+                            @"title" : @"NetWork",
+                            @"class" : @"HXNetWorkViewController"
                             }
                         ];
     }

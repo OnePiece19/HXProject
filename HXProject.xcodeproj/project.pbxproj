@@ -19,6 +19,9 @@
 		0A5CBB6E28219A7C007B2642 /* HXMVVMModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A5CBB6D28219A7C007B2642 /* HXMVVMModel.m */; };
 		0A5CBB7528219C38007B2642 /* HXMVVMCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A5CBB7428219C38007B2642 /* HXMVVMCell.m */; };
 		0A76037B281C385800D8D227 /* kid_tabconfigure.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 0A76037A281C385800D8D227 /* kid_tabconfigure.bundle */; };
+		0AC5169329C333DE0056F4B5 /* HXVenderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AC5169229C333DE0056F4B5 /* HXVenderViewController.m */; };
+		0AC5169B29C338A70056F4B5 /* HXNetWorkViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AC5169929C338A70056F4B5 /* HXNetWorkViewController.m */; };
+		0AC5169C29C338A70056F4B5 /* HXNetWorkViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0AC5169A29C338A70056F4B5 /* HXNetWorkViewController.xib */; };
 		416B6C670124327831542B28 /* libPods-App-HXProject.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CDE3A508FE27A32CE176CF32 /* libPods-App-HXProject.a */; };
 		E538E52626E3ED74004DD25A /* OffScreenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E538E52526E3ED74004DD25A /* OffScreenViewController.m */; };
 		E538E52A26E63902004DD25A /* HXRunTimeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E538E52926E63902004DD25A /* HXRunTimeViewController.m */; };
@@ -109,6 +112,11 @@
 		0A5CBB7328219C38007B2642 /* HXMVVMCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HXMVVMCell.h; sourceTree = "<group>"; };
 		0A5CBB7428219C38007B2642 /* HXMVVMCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HXMVVMCell.m; sourceTree = "<group>"; };
 		0A76037A281C385800D8D227 /* kid_tabconfigure.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = kid_tabconfigure.bundle; sourceTree = "<group>"; };
+		0AC5169129C333DE0056F4B5 /* HXVenderViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HXVenderViewController.h; sourceTree = "<group>"; };
+		0AC5169229C333DE0056F4B5 /* HXVenderViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HXVenderViewController.m; sourceTree = "<group>"; };
+		0AC5169829C338A70056F4B5 /* HXNetWorkViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HXNetWorkViewController.h; sourceTree = "<group>"; };
+		0AC5169929C338A70056F4B5 /* HXNetWorkViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HXNetWorkViewController.m; sourceTree = "<group>"; };
+		0AC5169A29C338A70056F4B5 /* HXNetWorkViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HXNetWorkViewController.xib; sourceTree = "<group>"; };
 		1F8F8A35893B54DFF3F1F116 /* Pods-App-HXProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-App-HXProject.debug.xcconfig"; path = "Target Support Files/Pods-App-HXProject/Pods-App-HXProject.debug.xcconfig"; sourceTree = "<group>"; };
 		56C42A1BCF885A4633D6E89D /* Pods-HXProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HXProject.debug.xcconfig"; path = "Target Support Files/Pods-HXProject/Pods-HXProject.debug.xcconfig"; sourceTree = "<group>"; };
 		AA05304A2881597236855BD5 /* Pods-HXProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HXProject.release.xcconfig"; path = "Target Support Files/Pods-HXProject/Pods-HXProject.release.xcconfig"; sourceTree = "<group>"; };
@@ -381,6 +389,16 @@
 			path = TabbarManager;
 			sourceTree = "<group>";
 		};
+		0AC5169429C3376D0056F4B5 /* NetWork */ = {
+			isa = PBXGroup;
+			children = (
+				0AC5169829C338A70056F4B5 /* HXNetWorkViewController.h */,
+				0AC5169929C338A70056F4B5 /* HXNetWorkViewController.m */,
+				0AC5169A29C338A70056F4B5 /* HXNetWorkViewController.xib */,
+			);
+			path = NetWork;
+			sourceTree = "<group>";
+		};
 		2F8D41A86FEFFD220014BCC4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -622,15 +640,15 @@
 		E5ADAA2726C3FC0E00D3BD6E /* HXProject */ = {
 			isa = PBXGroup;
 			children = (
-				E5ADAFF426C517B300D3BD6E /* ObjectCBase */,
-				E584E35526D6365D00A55DFE /* UIKit */,
-				E579D4C326C6A9A300640453 /* Define */,
-				E5ADAABC26C4521500D3BD6E /* ZYBSwizzle */,
 				E5ADAA4526C4305500D3BD6E /* AppDelegate */,
 				E5ADAA5226C430CD00D3BD6E /* Base */,
+				E579D4C326C6A9A300640453 /* Define */,
+				E5ADAFF426C517B300D3BD6E /* ObjectCBase */,
+				E584E35526D6365D00A55DFE /* UIKit */,
 				E5ADAA6B26C44C9F00D3BD6E /* Vender */,
 				E5ADAA2E26C3FC0E00D3BD6E /* ViewController.h */,
 				E5ADAA2F26C3FC0E00D3BD6E /* ViewController.m */,
+				E5ADAABC26C4521500D3BD6E /* ZYBSwizzle */,
 			);
 			path = HXProject;
 			sourceTree = "<group>";
@@ -675,6 +693,8 @@
 			isa = PBXGroup;
 			children = (
 				E5ADAA6C26C44C9F00D3BD6E /* AFNetworking */,
+				0AC5169129C333DE0056F4B5 /* HXVenderViewController.h */,
+				0AC5169229C333DE0056F4B5 /* HXVenderViewController.m */,
 			);
 			path = Vender;
 			sourceTree = "<group>";
@@ -816,6 +836,7 @@
 		E5ADAFF426C517B300D3BD6E /* ObjectCBase */ = {
 			isa = PBXGroup;
 			children = (
+				0AC5169429C3376D0056F4B5 /* NetWork */,
 				E579D4BC26C6A7EC00640453 /* HXHomeViewController.h */,
 				E579D4BD26C6A7EC00640453 /* HXHomeViewController.m */,
 				0A5CBB6528219987007B2642 /* MVVM */,
@@ -909,7 +930,7 @@
 		E5ADAA1D26C3FC0E00D3BD6E /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 1250;
+				LastUpgradeCheck = 1310;
 				TargetAttributes = {
 					E5ADAA2426C3FC0E00D3BD6E = {
 						CreatedOnToolsVersion = 12.5.1;
@@ -942,6 +963,7 @@
 				0A1B34C9281DA7C7006480E7 /* tab_my.bundle in Resources */,
 				0A1B34CA281DA7C7006480E7 /* tab_home.bundle in Resources */,
 				0A1B34CB281DA7C7006480E7 /* tab_square.bundle in Resources */,
+				0AC5169C29C338A70056F4B5 /* HXNetWorkViewController.xib in Resources */,
 				0A1B34CC281DA7C7006480E7 /* tab_course.bundle in Resources */,
 				E538E55E26EA4F93004DD25A /* HXCrashViewController.xib in Resources */,
 				E5BE205226CD1227004A5CAC /* AutoReleaseViewController.xib in Resources */,
@@ -1040,10 +1062,12 @@
 				E5ADAFFE26C54DF000D3BD6E /* KVCAddress.m in Sources */,
 				E5ADAAC926C4521500D3BD6E /* NSDictionary+Safety.m in Sources */,
 				E584E36026D63B3600A55DFE /* HXEventTestViewController.m in Sources */,
+				0AC5169329C333DE0056F4B5 /* HXVenderViewController.m in Sources */,
 				E538E53F26E68518004DD25A /* ClickPushViewController.m in Sources */,
 				E5ADB00C26C5A8F200D3BD6E /* NSObject+KVCDefender.m in Sources */,
 				E5880DA926C976A20067376C /* TestKVOCrashVC.m in Sources */,
 				E5ADAA5026C4307D00D3BD6E /* AppDelegate+AppService.m in Sources */,
+				0AC5169B29C338A70056F4B5 /* HXNetWorkViewController.m in Sources */,
 				E5880DA826C976A20067376C /* KVOCrashObject.m in Sources */,
 				E5ADB02726C5AF7D00D3BD6E /* KVCCrashObject.m in Sources */,
 				E538E55D26EA4F93004DD25A /* HXCrashViewController.m in Sources */,
@@ -1190,6 +1214,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 1F8F8A35893B54DFF3F1F116 /* Pods-App-HXProject.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_IDENTITY = "Apple Development";
@@ -1197,9 +1222,20 @@
 				DEVELOPMENT_TEAM = 8ZP5GWLM3R;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/Supporting Files/PrefixHeader.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"\"${PODS_ROOT}/Headers/Public/AFNetworking\"",
+					"\"${PODS_ROOT}/Headers/Public/HXLeetCode\"/**",
+					"\"${PODS_ROOT}/Headers/Public/JSONModel\"",
+					"\"${PODS_ROOT}/Headers/Public/Masonry\"",
+					"\"${PODS_ROOT}/Headers/Public/SCLAlertView-Objective-C\"",
+					"\"${PODS_ROOT}/Headers/Public/YYCategories\"",
+					"\"${PODS_ROOT}/Headers/Public/lottie-ios\"",
+				);
 				INFOPLIST_FILE = "Supporting Files/Info.plist";
 				INSTALL_PATH = "$(LOCAL_APPS_DIR)";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1217,6 +1253,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = DD77296AB46F5EC680C51C2F /* Pods-App-HXProject.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_IDENTITY = "Apple Development";
@@ -1224,9 +1261,20 @@
 				DEVELOPMENT_TEAM = 8ZP5GWLM3R;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/Supporting Files/PrefixHeader.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"\"${PODS_ROOT}/Headers/Public/AFNetworking\"",
+					"\"${PODS_ROOT}/Headers/Public/HXLeetCode\"/**",
+					"\"${PODS_ROOT}/Headers/Public/JSONModel\"",
+					"\"${PODS_ROOT}/Headers/Public/Masonry\"",
+					"\"${PODS_ROOT}/Headers/Public/SCLAlertView-Objective-C\"",
+					"\"${PODS_ROOT}/Headers/Public/YYCategories\"",
+					"\"${PODS_ROOT}/Headers/Public/lottie-ios\"",
+				);
 				INFOPLIST_FILE = "Supporting Files/Info.plist";
 				INSTALL_PATH = "$(LOCAL_APPS_DIR)";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
