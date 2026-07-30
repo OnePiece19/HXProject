@@ -7,7 +7,8 @@
 
 #import "HXTabBarController.h"
 #import "HXHomeViewController.h"
-#import "HXUIHomeViewController.h"
+
+// HXUIHomeViewController removed - merged into HXHomeViewController
 
 
 @interface HXTabBarController ()

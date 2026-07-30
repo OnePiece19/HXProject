@@ -1,0 +1,141 @@
+{
+  "version": "1.0",
+  "sections": [
+    {
+      "id": "lang_runtime",
+      "title": "语言 & 底层",
+      "icon": "📱",
+      "subtitle": "Objective-C 运行时、内存管理、Crash 防护",
+      "topics": [
+        {
+          "id": "memory",
+          "title": "内存管理",
+          "icon": "🧠",
+          "subtitle": "AutoReleasePool 原理与 RunLoop 关联",
+          "vcClass": "AutoReleaseViewController"
+        },
+        {
+          "id": "kvc",
+          "title": "KVC 键值编码",
+          "icon": "🔑",
+          "subtitle": "KVC 原理与常见 Crash 场景",
+          "vcClass": "KVCViewController"
+        },
+        {
+          "id": "kvccrash",
+          "title": "KVC Crash 测试",
+          "icon": "💣",
+          "subtitle": "KVC 常见 Crash 场景复现与防御",
+          "vcClass": "TestKVCCrashVC"
+        },
+        {
+          "id": "kvo",
+          "title": "KVO 键值观察",
+          "icon": "👁️",
+          "subtitle": "KVO 原理与常见 Crash 场景",
+          "vcClass": "KVOViewController"
+        },
+        {
+          "id": "kvocrash",
+          "title": "KVO Crash 测试",
+          "icon": "💣",
+          "subtitle": "KVO 常见 Crash 场景复现与防御",
+          "vcClass": "TestKVOCrashVC"
+        },
+        {
+          "id": "runtime",
+          "title": "Runtime 运行时",
+          "icon": "⚙️",
+          "subtitle": "消息转发 / Method Swizzling / 关联对象",
+          "vcClass": "HXRunTimeViewController"
+        },
+        {
+          "id": "crash",
+          "title": "Crash 分析",
+          "icon": "💥",
+          "subtitle": "常见 Crash 类型分析与定位方法",
+          "vcClass": "HXCrashViewController"
+        },
+        {
+          "id": "notification",
+          "title": "系统通知中心",
+          "icon": "🔔",
+          "subtitle": "NSNotificationCenter 使用与注意事项",
+          "vcClass": "HXNotificationViewController"
+        },
+        {
+          "id": "custom_notification",
+          "title": "自定义通知中心",
+          "icon": "🏗️",
+          "subtitle": "手写一套线程安全的通知中心",
+          "vcClass": "CustomNotificationCenterViewController"
+        },
+        {
+          "id": "mvvm",
+          "title": "MVVM 架构",
+          "icon": "🏛️",
+          "subtitle": "Model-View-ViewModel + 数据绑定实践",
+          "vcClass": "HXMVVMViewController"
+        },
+        {
+          "id": "network",
+          "title": "网络请求",
+          "icon": "📡",
+          "subtitle": "NSURLSession/AFNetworking 实战",
+          "vcClass": "HXNetWorkViewController"
+        }
+      ]
+    },
+    {
+      "id": "ui_rendering",
+      "title": "UIKit & 渲染",
+      "icon": "🎨",
+      "subtitle": "事件传递、离屏渲染、生命周期",
+      "topics": [
+        {
+          "id": "hittest",
+          "title": "事件传递链",
+          "icon": "✋",
+          "subtitle": "Hit-Test 机制 / 响应链 / 手势冲突全解",
+          "vcClass": "HXEventTestViewController"
+        },
+        {
+          "id": "offscreen",
+          "title": "离屏渲染",
+          "icon": "🖥",
+          "subtitle": "离屏渲染原理与性能优化技巧",
+          "vcClass": "OffScreenViewController"
+        },
+        {
+          "id": "lifecycle",
+          "title": "ViewController 生命周期",
+          "icon": "🔄",
+          "subtitle": "完整生命周期链路 Push/Pop/Present/Dismiss",
+          "vcClass": "LifeCycleViewController"
+        }
+      ]
+    },
+    {
+      "id": "tools",
+      "title": "网络 & 防护",
+      "icon": "🛠",
+      "subtitle": "AFNetworking / Defender 安全防护",
+      "topics": [
+        {
+          "id": "afnetworking",
+          "title": "AFNetworking",
+          "icon": "🌐",
+          "subtitle": "网络请求封装与安全策略演示",
+          "vcClass": "HXVenderViewController"
+        },
+        {
+          "id": "defender",
+          "title": "安全防护 (Defender)",
+          "icon": "🛡️",
+          "subtitle": "KVC/KVO/UnrecognizedSelector 防崩溃防护",
+          "vcClass": "HXCrashViewController"
+        }
+      ]
+    }
+  ]
+}

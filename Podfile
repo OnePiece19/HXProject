@@ -36,6 +36,7 @@ def vendors_pods
   
   
   
+  pod 'AFNetworking', '~> 4.0'
   pod 'JSONModel'
   pod 'lottie-ios', '2.5.3'       # https://blog.csdn.net/iOSjack/article/details/111032882
   pod 'Masonry', '1.1.0'

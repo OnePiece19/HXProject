@@ -34,8 +34,6 @@
 
 - (void)viewDidLayoutSubviews {
     [super viewDidLayoutSubviews];
-    // intrinsicContentSize的属性来获取内置大小,通过invalidateIntrinsicContentSize方法来在下次UI规划事件中重新计算intrinsicContentSize。
-    // 如果直接创建一个原始的UIView对象，显然它的内置大小为0
     [self.tabBar invalidateIntrinsicContentSize];
 }
 
@@ -50,24 +48,36 @@
 }
 
 #pragma mark - privateMethods
-- (void)setupViewControllers {
-    NSArray * tabBarItemModelArray = self.tabConfigureManager.tabBarItemModelArray;
-    
-    NSMutableArray *navigationArr = [[NSMutableArray alloc] init];
-    for (NSInteger i = 0; i < tabBarItemModelArray.count; i++) {
-        /*
-        HXTabBarItemModel *ItemModel = [tabBarItemModelArray objectAtIndex:i];
-        YYTabCommonVC *tempVC = [[YYTabCommonVC alloc] init];
-        YYBaseNavViewController *tempNav = [[YYBaseNavViewController alloc] initWithRootViewController:tempVC];
-        tempVC.currentTabModel = ItemModel;
-         */
-        HXHomeViewController *tempVC = [[HXHomeViewController alloc] init];
-        UINavigationController *tempNav = [[UINavigationController alloc] initWithRootViewController:tempVC];
 
+- (void)setupViewControllers {
+    NSArray *tabBarItemModelArray = self.tabConfigureManager.tabBarItemModelArray;
+
+    // 3 个差异化 Tab: 知识 | 算法 | 防护
+    NSArray *vcClasses = @[
+        @"HXHomeViewController",           // Tab 0: 知识 (所有知识点分组)
+        @"HXLeetCode.TouchNum",            // Tab 1: 算法 (HXLeetCode)
+        @"HXCrashViewController",           // Tab 2: 防护 (Crash/Defender)
+    ];
+
+    NSMutableArray *navigationArr = [[NSMutableArray alloc] init];
+    for (NSInteger i = 0; i < tabBarItemModelArray.count && i < vcClasses.count; i++) {
+        Class cls = NSClassFromString(vcClasses[i]);
+        UIViewController *tempVC = nil;
+
+        if (cls && [cls isSubclassOfClass:[UIViewController class]]) {
+            tempVC = [[cls alloc] init];
+        } else {
+            // 兜底
+            tempVC = [[UIViewController alloc] init];
+            tempVC.view.backgroundColor = [UIColor whiteColor];
+            tempVC.title = @"Coming Soon";
+        }
+
+        UINavigationController *tempNav = [[UINavigationController alloc] initWithRootViewController:tempVC];
         [navigationArr addObject:tempNav];
     }
     [self setViewControllers:navigationArr];
-    self.selectedIndex = KTabBarSelectIndexCourse;
+    self.selectedIndex = 0;
     self.delegate = self;
 }
 
@@ -79,23 +89,22 @@
     } else {
         img = [UIImage imageWithColor:[UIColor whiteColor]];
     }
-    [self.tabBar setBackgroundImage:img];    
+    [self.tabBar setBackgroundImage:img];
     self.tabBar.layer.cornerRadius = 10;
     self.tabBar.barStyle = UIBarStyleDefault;
-    if (@available(iOS 15.0, *)) { /*在ios15，有变透明的坑*/
-        UITabBarAppearance * appearance = [UITabBarAppearance new];
+    if (@available(iOS 15.0, *)) {
+        UITabBarAppearance *appearance = [UITabBarAppearance new];
         appearance.backgroundImage = img;
         [UITabBar appearance].standardAppearance = appearance;
-        [UITabBar appearance].scrollEdgeAppearance = [UITabBar appearance].standardAppearance ;
+        [UITabBar appearance].scrollEdgeAppearance = [UITabBar appearance].standardAppearance;
     }
 }
 
 - (void)customizeTabBarItemsStyle {
-
     NSInteger index = 0;
     for (UITabBarItem *item in [((HXMainContainer *)self).tabBar items]) {
-        HXTabBarItemModel * itemModel = [self.tabConfigureManager.tabBarItemModelArray objectAtIndexSafely:index];
-        
+        HXTabBarItemModel *itemModel = [self.tabConfigureManager.tabBarItemModelArray objectAtIndexSafely:index];
+
         item.tag = 100 + index;
         item.titlePositionAdjustment = UIOffsetMake(0, -20);
         item.imageInsets = UIEdgeInsetsMake(0, 0, 0, 0);
@@ -105,18 +114,17 @@
         UIImage *imageSelected = [self.tabConfigureManager getSourceImageSelectedWithItemModel:itemModel];
         [item setImage:imageNormal];
         [item setSelectedImage:imageSelected];
-//        [item setSelectedImage:[[UIImage imageWithColor:[UIColor whiteColor]size:imageSelected.size] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal]];
-        
+
         // text
-        UIColor *notmalColor = [UIColor colorWithHexString:[itemModel textColorNormal]];
+        UIColor *normalColor = [UIColor colorWithHexString:[itemModel textColorNormal]];
         UIColor *selectColor = [UIColor colorWithHexString:[itemModel textColorSelected]];
         UIFont *titleFont = [UIFont boldSystemFontOfSize:11];
-        NSDictionary *normalTColor = [NSDictionary dictionaryWithObjectsAndKeys:notmalColor, NSForegroundColorAttributeName, titleFont, NSFontAttributeName, nil];
+        NSDictionary *normalTColor = [NSDictionary dictionaryWithObjectsAndKeys:normalColor, NSForegroundColorAttributeName, titleFont, NSFontAttributeName, nil];
         NSDictionary *selectTColor = [NSDictionary dictionaryWithObjectsAndKeys:selectColor, NSForegroundColorAttributeName, titleFont, NSFontAttributeName, nil];
         [item setTitleTextAttributes:normalTColor forState:UIControlStateNormal];
         [item setTitleTextAttributes:selectTColor forState:UIControlStateSelected];
         self.tabBar.tintColor = selectColor;
-        self.tabBar.unselectedItemTintColor = notmalColor;
+        self.tabBar.unselectedItemTintColor = normalColor;
         item.titlePositionAdjustment = UIOffsetMake(0, 0);
         item.imageInsets = UIEdgeInsetsMake(0, 0, 0, 0);
         index++;
@@ -124,9 +132,6 @@
 }
 
 - (void)customizeTabBarItemsLottie {
-
-    // https://blog.csdn.net/jeffasd/article/details/50801873
-    
     NSMutableArray *tabBarBtnArr = [NSMutableArray new];
     for (UIView *view in self.tabBar.subviews) {
         if ([view isKindOfClass:NSClassFromString(@"UITabBarButton")]) {
@@ -136,10 +141,10 @@
     [tabBarBtnArr sortUsingComparator:^NSComparisonResult(UIView *obj1, UIView *obj2) {
         return obj1.left > obj2.left;
     }];
-    
+
     [self.tabBarLottieViewArray removeAllObjects];
-    [tabBarBtnArr enumerateObjectsUsingBlock:^(UIView * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
-        HXTabBarItemModel * itemModel = [self.tabConfigureManager.tabBarItemModelArray objectAtIndexSafely:idx];
+    [tabBarBtnArr enumerateObjectsUsingBlock:^(UIView *_Nonnull obj, NSUInteger idx, BOOL *_Nonnull stop) {
+        HXTabBarItemModel *itemModel = [self.tabConfigureManager.tabBarItemModelArray objectAtIndexSafely:idx];
         for (UIImageView *imageView in obj.subviews) {
             if ([imageView isKindOfClass:NSClassFromString(@"UITabBarSwappableImageView")]) {
                 NSString *lottieName = itemModel.imageLottie;
@@ -149,8 +154,8 @@
                 tabLottieView.loopAnimation = NO;
                 tabLottieView.userInteractionEnabled = NO;
                 [imageView addSubview:tabLottieView];
-                
-                CGSize lottieViewSize = CGSizeMake(28.0f,28.0f);
+
+                CGSize lottieViewSize = CGSizeMake(28.0f, 28.0f);
                 [tabLottieView mas_makeConstraints:^(MASConstraintMaker *make) {
                     make.width.mas_equalTo(lottieViewSize.width);
                     make.height.mas_equalTo(lottieViewSize.height);
@@ -163,7 +168,6 @@
                 } else {
                     tabLottieView.hidden = YES;
                 }
-                
             }
         }
     }];
@@ -177,7 +181,7 @@
         lottieView.hidden = YES;
         if (lottieView.animationProgress != 0.0) {
             lottieView.animationProgress = 0.0;
-        }else{
+        } else {
             continue;
         }
     }
@@ -189,24 +193,20 @@
 }
 
 #pragma mark - UITabBarControllerDelegate
+
 - (void)tabBarController:(UITabBarController *)tabBarController didSelectViewController:(UIViewController *)viewController {
-    if(tabBarController.selectedIndex == 0) {
+    if (tabBarController.selectedIndex == 0) {
         [[NSNotificationCenter defaultCenter] postNotificationName:@"tabBarControllerDidSelectViewControllerFirst" object:nil];
     }
-    NSInteger newItemIndex= tabBarController.selectedIndex;
-    if (newItemIndex == self.lastSelectIdx) {
-        //发送一些通知，比如说，点击选中的按钮控制器tableview滚动到起始位置
-    } else {
-        // 隐藏上次选中的tabItem的Lottie视图
+    NSInteger newItemIndex = tabBarController.selectedIndex;
+    if (newItemIndex != self.lastSelectIdx) {
         [self tabItemChangeToIndex:newItemIndex];
         self.lastSelectIdx = newItemIndex;
-    }
-    if (tabBarController.selectedIndex == 1) {
-//        [ZYBTabBarTipsViewPlugin hide];
     }
 }
 
 #pragma mark - lazyload
+
 - (HXTabConfigureManager *)tabConfigureManager {
     if (!_tabConfigureManager) {
         _tabConfigureManager = [[HXTabConfigureManager alloc] init];
@@ -222,5 +222,3 @@
 }
 
 @end
-
-
