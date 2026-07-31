@@ -139,8 +139,8 @@
 		E538E55C26EA4F93004DD25A /* HXCrashViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HXCrashViewController.xib; sourceTree = "<group>"; };
 		E538E55F26EA526D004DD25A /* HXUncaughtExceptionHandle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HXUncaughtExceptionHandle.h; sourceTree = "<group>"; };
 		E538E56026EA526D004DD25A /* HXUncaughtExceptionHandle.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HXUncaughtExceptionHandle.m; sourceTree = "<group>"; };
-		E579D4BC26C6A7EC00640453 /* HXHomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HXHomeViewController.h; sourceTree = "<group>"; };
-		E579D4BD26C6A7EC00640453 /* HXHomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HXHomeViewController.m; sourceTree = "<group>"; };
+		E579D4BC26C6A7EC00640453 /* HXHomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Topics/HXHomeViewController.h; sourceTree = "<group>"; };
+		E579D4BD26C6A7EC00640453 /* HXHomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Topics/HXHomeViewController.m; sourceTree = "<group>"; };
 		E579D4C026C6A93A00640453 /* PBNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PBNavigationController.h; sourceTree = "<group>"; };
 		E579D4C126C6A93A00640453 /* PBNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PBNavigationController.m; sourceTree = "<group>"; };
 		E579D4C426C6A9A300640453 /* PBFrameMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PBFrameMacros.h; sourceTree = "<group>"; };
